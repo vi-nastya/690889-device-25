@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Настя Виденеева](https://up.htmlacademy.ru/htmlcss/25/user/690889).
-* Наставник: `Неизвестно`.
+* Наставник: [Алёна Сиприкова](https://htmlacademy.ru/profile/asiprikova).
 
 ---
 
