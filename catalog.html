@@ -52,7 +52,64 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <!-- Здесь будут фильтры -->
+        <form
+          class="filter-form"
+          action="https://echo.htmlacademy.ru"
+          method="GET"
+        >
+          <fieldset>
+            <legend>Стоимость</legend>
+            <label for="price-min">от 0</label>
+            <input
+              type="range"
+              name="price-min"
+              id="price-min"
+              value="0"
+              min="0"
+              max="15000"
+            />
+            <label for="price-max">до 5000:</label>
+            <input
+              type="range"
+              name="price-max"
+              id="price-max"
+              value="5000"
+              min="0"
+              max="15000"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <label>
+              <input type="checkbox" name="color" value="black" checked />Черный
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="white" />Белый
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="blue" checked />Синий
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="red" checked />Красный
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="pink" />Розовый
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label>
+              <input type="radio" name="bluetooth" value="yes" checked />
+              Есть
+            </label>
+            <label>
+              <input type="radio" name="bluetooth" value="no" />
+              Нет
+            </label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <div>
@@ -209,5 +266,17 @@
         >
       </div>
     </footer>
+
+    <!-- Выпадающий список категорий -->
+    <div class="category-dropdown">
+      <ul>
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a></li>
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </div>
   </body>
 </html>
