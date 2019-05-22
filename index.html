@@ -29,11 +29,20 @@
             <li><a href="compare.html">Сравнить</a></li>
             <li><a href="cart.html">Корзина</a></li>
           </ul>
-          <ul class="site-navigation">
-            <li class="catalog-link">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-          </ul>
+
+          <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+
+          <!-- Выпадающий список категорий -->
+          <div class="category-dropdown">
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
 
           <ul class="info">
             <li><a href="#">Доставка</a></li>
@@ -342,45 +351,40 @@
     <!-- НАПИШИТЕ НАМ - ФОРМА -->
     <div class="contact-us-popup">
       <button class="contact-us-popup-close" aria-label="Закрыть форму">
-      <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="GET">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name" placeholder="Имя Фамилия" />
-        <label for="email">Ваш e-mail:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="email@example.com"
-        />
-        <label for="text">Текст письма:</label>
-        <input
-          type="text"
-          id="text"
-          name="text"
-          placeholder="В свободной форме"
-        />
+        Закрыть
+      </button>
+      <form
+        class="contact-us-form"
+        action="https://echo.htmlacademy.ru"
+        method="GET"
+      >
+        <label>
+          Ваше имя:
+          <input type="text" name="name" placeholder="Имя Фамилия" />
+        </label>
+
+        <label>
+          Ваш e-mail:
+          <input type="email" name="email" placeholder="email@example.com" />
+        </label>
+
+        <label>
+          Текст письма:
+          <textarea rows="5" name="text">
+            В свободной форме
+          </textarea>
+        </label>
+
         <button type="submit">Отправить</button>
       </form>
     </div>
 
-
-<!-- MAP POPUP -->
-<div class="map-popup">
-  <img src="img/index/map-big.png">
-  <button class="map-popup-close" aria-label="Закрыть карту">Закрыть</button>
-</div>
-
-    <!-- Выпадающий список категорий -->
-    <div class="category-dropdown">
-        <ul>
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
-      </div>
-
+    <!-- MAP POPUP -->
+    <div class="map-popup">
+      <img src="img/index/map-big.png" />
+      <button class="map-popup-close" aria-label="Закрыть карту">
+        Закрыть
+      </button>
+    </div>
   </body>
 </html>
