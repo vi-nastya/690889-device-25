@@ -96,6 +96,12 @@ body {
   margin: 0 auto;
 }
 
+.header-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .main-navigation ul {
   list-style: none;
   padding: 0;
@@ -149,6 +155,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.15px;
   line-height: 36px;
+  text-decoration: none;
 }
 
 .category-dropdown a:hover,
