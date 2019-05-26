@@ -279,6 +279,11 @@ body {
 .info-slide {
   display: none;
   width: 700px;
+  margin-left: 120px;
+}
+
+.info-details {
+  width: 430px;
 }
 
 .info-slide-current {
