@@ -126,6 +126,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.header-info li {
+  display: inline-block;
+}
+
 .header-info a,
 .catalog-link {
   font-family: Gilroy, Geneva, sans-serif;
@@ -393,8 +397,24 @@ a.info-navigation-current:hover::before {
   justify-content: space-around;
 }
 
-.brand-item {
+.brand-item a {
   font-size: 0;
+}
+
+.brand-item a img {
+  filter: grayscale();
+  opacity: 0.2;
+}
+
+.brand-item a:hover img,
+.brand-item a:focus img {
+  filter: none;
+  opacity: 1;
+}
+
+.logo_1_jpg {
+  background-image: url("styleguide-assets/logo-1.jpg");
+  opacity: 0.2;
 }
 
 /* About us section */
