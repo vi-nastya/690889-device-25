@@ -1,6 +1,19 @@
 @font-face {
   font-family: Gilroy;
   src: url(../fonts/Gilroy-ExtraBold.otf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(../fonts/Gilroy-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url(../fonts/OpenSans-Light.ttf);
+  font-weight: 300;
 }
 
 /* GLOBAL STYLES */
@@ -8,7 +21,8 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-weight: 300;
   font-size: 15px;
   color: #464646;
   letter-spacing: 0.15px;
@@ -36,8 +50,8 @@ body {
 
 .button {
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: Gilroy, "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.5px;
@@ -45,18 +59,41 @@ body {
   line-height: 24px;
   border: none;
   background: transparent;
+  position: relative;
 }
 
-.button:hover,
-.button:focus {
-  background-color: rgba(240, 197, 46);
+.button::before {
+  content: " ";
+  /* vertical-align: middle; */
+  background-color: #f0c52e;
+  display: inline-block;
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  z-index: -1;
+  top: 7px;
+}
+
+.button:hover::before {
+  height: 40px;
+  top: -10px;
+}
+
+.button::before:hover,
+.button::before:focus {
+  height: 40px;
+  background-color: #f0c52e;
 }
 
 /* HEADER */
 .main-header {
-  background-color: rgba(240, 197, 46, 0.3);
-  width: 1160px;
+  background-color: rgba(240, 197, 46, 0.5);
   margin: auto;
+}
+
+.main-navigation {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .main-navigation ul {
@@ -85,7 +122,8 @@ body {
 
 .header-info a,
 .catalog-link {
-  font-family: Gilroy, "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.6px;
@@ -150,32 +188,56 @@ body {
   font-size: 47px;
   letter-spacing: 0.47px;
   line-height: 56px;
-  font-family: Gilroy, "Open Sans", sans-serif;
-  color: rgb(0, 0, 0);
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
+  color: #000000;
 }
 
 .promo-description {
   font-size: 15px;
 }
 
+.promo-features td {
+  padding-right: 40px;
+}
+
+.promo-features tr:nth-of-type(1) td {
+  font-family: Gilroy-Light, Geneva, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.promo-features tr:nth-of-type(2) td {
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
 /* Categories section */
 .category-icon {
-  background-color: rgba(240, 197, 46, 0.3);
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .category-icon:hover,
 .category-icon:focus {
-  background-color: rgba(240, 197, 46);
+  background-color: #f0c52e;
 }
 
 .category-icon:active {
-  background-color: rgba(240, 197, 46);
+  background-color: #f0c52e;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .categories-list {
   list-style: none;
   padding: 0;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .category-item {
@@ -184,11 +246,10 @@ body {
 
 .category-item a {
   display: block;
-
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   color: #000000;
   font-size: 18px;
-  font-weight: bold;
   text-align: left;
   text-decoration: none;
 
@@ -211,7 +272,22 @@ body {
 
 .info-slide-current {
   display: inline-block;
+}
+
+.info-slide-delivery {
   background-image: url("../img/icons/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.info-slide-credit {
+  background-image: url("../img/icons/credit.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.info-slide-warranty {
+  background-image: url("../img/icons/warranty.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -225,36 +301,55 @@ body {
 }
 
 .info-navigation a {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   letter-spacing: 3.5px;
   line-height: 24px;
   color: #000000;
-  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
+  padding-left: 20px;
   vertical-align: middle;
   width: 160px;
-  height: 40px;
+  position: relative;
+  display: inline-block;
 }
 
-.info-navigation a:hover,
+.info-navigation a::before {
+  content: " ";
+  /* vertical-align: middle; */
+  height: 40px;
+  background-color: #f0c52e;
+  display: inline-block;
+  width: 160px;
+  position: absolute;
+  z-index: -1;
+}
+
+.info-navigation a:hover::before {
+  height: 40px;
+  top: -10px;
+}
+
+/* .info-navigation a:hover,
 .info-navigation a:focus {
   background-color: #f0c52e;
   color: #000000;
-}
+} */
 
 a.info-navigation-current {
   background-color: #000000;
   color: #f0c52e;
+  width: 278px;
 }
 
 .info-section-name {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 47px;
   color: #000000;
-  font-weight: bold;
 }
 
 /* Brands section */
@@ -269,6 +364,16 @@ a.info-navigation-current {
 }
 
 /* About us section */
+.about-us h2,
+.contacts h2 {
+  font-size: 47px;
+  letter-spacing: 0.47px;
+  line-height: 56px;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
 .about-us a {
   text-decoration: none;
 }
@@ -318,12 +423,17 @@ a.info-navigation-current {
 
 .page-header {
   font-size: 47px;
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
+  color: #000000;
+  line-height: 48px;
+  letter-spacing: 0.47px;
 }
 
 .filters h2,
 .sorting h2 {
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 16px;
   color: #000000;
   letter-spacing: 3.5px;
@@ -338,7 +448,8 @@ a.info-navigation-current {
 }
 
 .filters legend {
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 0.18px;
@@ -369,7 +480,8 @@ a.info-navigation-current {
 }
 
 .catalog-item-name {
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 0.18px;
@@ -378,6 +490,7 @@ a.info-navigation-current {
 
 .button-compare {
   font-family: OpenSans-Light, Arial, sans-serif;
+  font-weight: 300;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.13px;
@@ -395,6 +508,15 @@ a.info-navigation-current {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-price {
+  font-family: Gilroy-Light, Geneva, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #464646;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
 /* Catalog page pagination */
 .pagination {
   background-color: rgba(0, 0, 0, 0.08);
@@ -407,16 +529,18 @@ a.info-navigation-current {
 
 .pagination a {
   text-decoration: none;
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .pagination-direction {
   display: inline-block;
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: #000000;
   letter-spacing: 3.5px;
   line-height: 24px;
   text-transform: uppercase;
@@ -445,17 +569,20 @@ a.info-navigation-current {
 }
 
 /* FOOTER */
-.main-footer {
+.footer {
   background-color: #464646;
   color: rgba(256, 256, 256, 0.7);
   font-size: 15px;
   letter-spacing: 0.15px;
   line-height: 30px;
-  width: 1160px;
-  margin: auto;
 }
 
-.main-footer ul {
+.footer-inner {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer ul {
   list-style: none;
   padding: 0;
 }
@@ -469,7 +596,7 @@ a.info-navigation-current {
 
 .footer-navigation a:hover,
 .footer-navigation a:focus {
-  color: rgb(256, 256, 256);
+  color: #ffffff;
 }
 
 .footer-navigation a:active {
@@ -477,8 +604,9 @@ a.info-navigation-current {
 }
 
 .footer-info a {
-  color: rgb(256, 256, 256);
-  font-family: "Gilroy", "Open Sans", sans-serif;
+  color: #ffffff;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   letter-spacing: 3.6px;
   line-height: 24px;
