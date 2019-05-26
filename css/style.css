@@ -75,10 +75,15 @@ body {
 }
 
 .button:hover::before,
-.button:focus::before {
+.button:focus::before,
+.button:active::before {
   height: 40px;
   top: -10px;
   background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* HEADER */
@@ -265,7 +270,7 @@ body {
   background-color: #f0c52e;
 }
 
-.category-item-link:active span {
+.category-item-link:active .category-item-name {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -531,13 +536,23 @@ a.info-navigation-current:hover::before {
   text-decoration: none;
 }
 
-.catalog-item-name {
+.catalog-image {
+  background-color: #d8d8d8;
+}
+
+.catalog-item:hover .catalog-image,
+.catalog-item:focus .catalog-image {
+  filter: opacity(0.5);
+}
+
+.catalog-item-link {
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 0.18px;
   line-height: 24px;
+  text-decoration: none;
 }
 
 .button-compare {
