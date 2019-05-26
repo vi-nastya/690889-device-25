@@ -357,12 +357,6 @@ body {
   position: absolute;
 }
 
-/* .info-navigation a:hover,
-.info-navigation a:focus {
-  background-color: #f0c52e;
-  color: #000000;
-} */
-
 a.info-navigation-current {
   background-color: #000000;
   color: #f0c52e;
@@ -388,10 +382,11 @@ a.info-navigation-current:hover::before {
 .brands-list {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .brand-item {
-  display: inline-block;
   font-size: 0;
 }
 
@@ -408,6 +403,11 @@ a.info-navigation-current:hover::before {
 
 .about-us a {
   text-decoration: none;
+}
+
+.about-us-contacts-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Pop-ups */
