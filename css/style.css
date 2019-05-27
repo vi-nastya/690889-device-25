@@ -454,13 +454,32 @@ a.info-navigation-current:hover::before {
   color: #000000;
 }
 
+.about-us-inner {
+  width: 480px;
+}
+
+.contacts-inner {
+  width: 560px;
+}
+
 .about-us a {
   text-decoration: none;
+}
+
+.delivery-services {
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .about-us-contacts-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.contacts-map-container {
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 /* Pop-ups */
