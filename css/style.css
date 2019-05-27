@@ -410,11 +410,6 @@ a.info-navigation-current:hover::before {
   opacity: 1;
 }
 
-.logo_1_jpg {
-  background-image: url("styleguide-assets/logo-1.jpg");
-  opacity: 0.2;
-}
-
 /* About us section */
 .about-us h2,
 .contacts h2 {
@@ -536,13 +531,13 @@ a.info-navigation-current:hover::before {
   text-decoration: none;
 }
 
-.catalog-image {
+.catalog-image-container {
   background-color: #d8d8d8;
 }
 
 .catalog-item:hover .catalog-image,
 .catalog-item:focus .catalog-image {
-  filter: opacity(0.5);
+  opacity: 0.5;
 }
 
 .catalog-item-link {
