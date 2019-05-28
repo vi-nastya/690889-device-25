@@ -624,6 +624,8 @@ a.info-navigation-current:hover::before {
 
 .filter-item {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters-header {
