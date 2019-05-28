@@ -275,10 +275,6 @@ body {
   justify-content: space-between;
 }
 
-.category-item {
-  display: inline-block;
-}
-
 .category-item-link {
   display: block;
   font-family: Gilroy, Geneva, sans-serif;
@@ -337,7 +333,12 @@ body {
 }
 
 .info-slide-current {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-inner {
+  display: flex;
 }
 
 .info-slide-delivery {
@@ -363,7 +364,6 @@ body {
   padding: 0;
 
   width: 280px;
-  display: inline-block;
 }
 
 .info-navigation a {
@@ -522,10 +522,10 @@ a.info-navigation-current:hover::before {
   font-size: 14px;
   letter-spacing: 0.14px;
   line-height: 24px;
+  display: flex;
 }
 
 .breadcrumbs li {
-  display: inline-block;
   margin-right: 40px;
 }
 
