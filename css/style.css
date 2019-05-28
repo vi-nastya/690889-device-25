@@ -554,6 +554,7 @@ a.info-navigation-current:hover::before {
 
 .catalog-container {
   display: flex;
+  justify-content: space-between;
 }
 
 /* Filters */
@@ -572,17 +573,17 @@ a.info-navigation-current:hover::before {
 .filters {
   background-color: #ebebeb;
   padding: 0;
-  margin: 0;
-  display: inline-block;
+  flex-grow: 1;
 }
 
 .filters-inner {
   width: 330px;
   margin: 0;
+  margin-left: auto;
 }
 
 .filters-header-container {
-  margin: 0;
+  margin-left: auto;
   height: 70px;
   width: 330px;
   background-color: #d9d9d9;
@@ -624,12 +625,12 @@ a.info-navigation-current:hover::before {
   flex-direction: column;
 }
 
-.catalog-right-column {
-  margin: 0;
-  padding: 0;
+.catalog-wrapper {
   padding-bottom: 60px;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /* Sorting */
