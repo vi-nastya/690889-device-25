@@ -103,6 +103,36 @@ body {
   margin-right: auto;
 }
 
+.main-navigation-search input[type="search"] {
+  background-color: #f7e296;
+  border: none;
+}
+
+.main-navigation-search input[type="search"]:focus {
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+.navigation-search-button {
+  color: #000000;
+  background-color: #f7e296;
+  width: 100px;
+  border: 2px solid #000000;
+}
+
+.navigation-search-button:hover,
+.navigation-search-button:focus {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+
+.navigation-search-button:active {
+  color: rgba(256, 256, 256, 0.3);
+  background-color: #000000;
+  border: none;
+}
+
 .login-link {
   width: 80px;
 }

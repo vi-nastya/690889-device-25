@@ -17,11 +17,18 @@
 
         <div class="header-row-top">
           <div class="main-navigation-search-container">
-            <form class="main-navigation-search">
-              <input type="search" placeholder="Поиск по сайту" />
-              <button type="submit"></button>
+            <form
+              class="main-navigation-search"
+              action="https://echo.htmlacademy.ru"
+              method="GET"
+            >
+              <input type="search" name="search" placeholder="Поиск по сайту" />
+              <button type="submit" class="navigation-search-button">
+                Найти
+              </button>
             </form>
           </div>
+
           <ul class="user-navigation">
             <li class="profile-link">
               <a href="profile.html">Валентин Петухов</a>
