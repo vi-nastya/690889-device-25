@@ -100,7 +100,7 @@ body {
 
 .main-navigation-search-container {
   width: 440px;
-  margin-right: 100px;
+  margin-right: auto;
 }
 
 .login-link {
@@ -114,8 +114,8 @@ body {
   width: 100px;
 }
 
-.header-row-1,
-.header-row-2 {
+.header-row-top,
+.header-row-bottom {
   display: flex;
   justify-content: space-between;
 }
@@ -147,7 +147,7 @@ body {
 
 .catalog-link-container {
   width: 250px;
-  margin-right: 290px;
+  margin-right: auto;
 }
 
 .header-info {
@@ -672,7 +672,6 @@ a.info-navigation-current:hover::before {
 
 .catalog-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 760px;
@@ -823,9 +822,9 @@ a.info-navigation-current:hover::before {
   margin: 0;
 }
 
-.footer-row-1,
-.footer-row-2,
-.footer-row-3 {
+.footer-row-top,
+.footer-row-middle,
+.footer-row-bottom {
   display: flex;
   justify-content: space-between;
 }
