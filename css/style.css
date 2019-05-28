@@ -116,7 +116,7 @@ body {
 .navigation-search-button {
   color: #000000;
   background-color: #f7e296;
-  width: 100px;
+  width: 80px;
   border: 2px solid #000000;
 }
 
@@ -125,12 +125,14 @@ body {
   color: #ffffff;
   background-color: #000000;
   border: none;
+  width: 84px;
 }
 
 .navigation-search-button:active {
   color: rgba(256, 256, 256, 0.3);
   background-color: #000000;
   border: none;
+  width: 84px;
 }
 
 .login-link {
