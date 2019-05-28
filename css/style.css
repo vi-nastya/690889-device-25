@@ -577,15 +577,16 @@ a.info-navigation-current:hover::before {
 }
 
 .filters-inner {
-  width: 330px;
+  width: 270px;
   margin: 0;
   margin-left: auto;
+  padding-left: 60px;
 }
 
 .filters-header-container {
   margin-left: auto;
+  width: 100%;
   height: 70px;
-  width: 330px;
   background-color: #d9d9d9;
 }
 
@@ -595,7 +596,10 @@ a.info-navigation-current:hover::before {
 
 .filters-header {
   margin: 0;
+  margin-left: auto;
+  padding-left: 60px;
   padding: 0;
+  width: 270px;
 }
 
 .filter-name {
