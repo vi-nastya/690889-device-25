@@ -466,6 +466,7 @@ a.info-navigation-current:hover::before {
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
+  padding: 0;
 }
 
 .brand-item a {
@@ -494,13 +495,13 @@ a.info-navigation-current:hover::before {
   color: #000000;
 }
 
-.about-us-inner {
+.about-us {
   width: 480px;
   display: flex;
   flex-direction: column;
 }
 
-.contacts-inner {
+.contacts {
   width: 560px;
   display: flex;
   flex-direction: column;
