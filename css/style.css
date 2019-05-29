@@ -919,7 +919,53 @@ a.info-navigation-current:hover::before {
   justify-content: space-between;
 }
 
-.footer-social a {
-  color: rgba(256, 256, 256, 0.7);
-  text-decoration: none;
+.social {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 23px;
+  font-size: 0px;
+  opacity: 0.3;
+}
+
+.social-fb {
+  background-image: url("../img/icons/fb.svg");
+  background-repeat: no-repeat;
+}
+
+.social-in {
+  background-image: url("../img/icons/instagram.svg");
+  background-repeat: no-repeat;
+}
+
+.social-tw {
+  background-image: url("../img/icons/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.social:hover,
+.social:focus {
+  opacity: 0.6;
+}
+
+.social:active {
+  opacity: 0.1;
+}
+
+.developer-link {
+  display: inline-block;
+  width: 27px;
+  height: 35px;
+  background-image: url("../img/icons/logo-html.svg");
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+
+.developer-link:hover,
+.developer-link:focus {
+  opacity: 0.6;
+}
+
+.developer-link:active {
+  opacity: 0.3;
 }
