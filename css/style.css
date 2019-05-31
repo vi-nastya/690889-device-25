@@ -712,12 +712,31 @@ a.info-navigation-current:hover::before {
   line-height: 24px;
 }
 
-.filters label {
+.checkbox-label {
+  display: inline-block;
   font-family: OpenSans-Light;
   font-size: 14px;
   color: #000000;
   letter-spacing: 0.14px;
   line-height: 40px;
+  position: relative;
+  margin-left: 40px;
+}
+
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  background-image: url("../img/icons/checkbox-off.svg");
+  background-repeat: no-repeat;
+  left: -40px;
+  top: 8px;
+  width: 27px;
+  height: 23px;
+}
+
+input[type="checkbox"]:checked + .checkbox-label::before {
+  background-image: url("../img/icons/checkbox-on.svg");
 }
 
 .filter-color {
