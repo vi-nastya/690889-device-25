@@ -519,18 +519,34 @@ a.info-navigation-current:hover::before {
   padding: 0;
 }
 
-.brand-item a {
+.brand-link {
+  display: block;
   font-size: 0;
+  background-repeat: no-repeat;
 }
 
-.brand-item a img {
-  filter: grayscale();
-  opacity: 0.2;
+.brand-link-dji {
+  background-image: url("../img/index/brand-1.png");
 }
 
-.brand-item a:hover img,
-.brand-item a:focus img {
-  filter: none;
+.brand-link-spgadgets {
+  background-image: url("../img/index/brand-2.png");
+}
+
+.brand-link-gopro {
+  background-image: url("../img/index/brand-3.png");
+}
+
+.brand-link-vive {
+  background-image: url("../img/index/brand-4.png");
+}
+
+.brand-icon {
+  opacity: 0;
+}
+
+.brand-link:hover .brand-icon,
+.brand-link:focus .brand-icon {
   opacity: 1;
 }
 
