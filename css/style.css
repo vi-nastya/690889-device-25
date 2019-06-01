@@ -734,7 +734,8 @@ a.info-navigation-current:hover::before {
   line-height: 24px;
 }
 
-.checkbox-label {
+.checkbox-label,
+.radio-label {
   display: inline-block;
   font-family: OpenSans-Light;
   font-size: 14px;
@@ -759,6 +760,22 @@ a.info-navigation-current:hover::before {
 
 input[type="checkbox"]:checked + .checkbox-label::before {
   background-image: url("../img/icons/checkbox-on.svg");
+}
+
+.radio-label::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  background-image: url("../img/icons/radio-off.svg");
+  background-repeat: no-repeat;
+  left: -40px;
+  top: 7px;
+  width: 25px;
+  height: 25px;
+}
+
+input[type="radio"]:checked + .radio-label::before {
+  background-image: url("../img/icons/radio-on.svg");
 }
 
 .filter-color {

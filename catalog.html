@@ -190,12 +190,26 @@
               </fieldset>
               <fieldset class="filter-item filter-bluetooth">
                 <legend class="filter-name">Bluetooth</legend>
-                <label>
-                  <input type="radio" name="bluetooth" value="yes" checked />
+                <input
+                  type="radio"
+                  class="visually-hidden"
+                  name="bluetooth"
+                  id="bluetooth-yes"
+                  value="yes"
+                  checked
+                />
+                <label for="bluetooth-yes" class="radio-label">
                   Есть
                 </label>
-                <label>
-                  <input type="radio" name="bluetooth" value="no" />
+
+                <input
+                  type="radio"
+                  class="visually-hidden"
+                  name="bluetooth"
+                  id="bluetooth-no"
+                  value="no"
+                />
+                <label for="bluetooth-no" class="radio-label">
                   Нет
                 </label>
               </fieldset>
