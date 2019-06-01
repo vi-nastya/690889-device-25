@@ -685,10 +685,10 @@ a.info-navigation-current:hover::before {
 
 .filters-inner {
   box-sizing: border-box;
-  width: 268px;
+  width: 327px;
   margin: 0;
   margin-left: auto;
-  /* padding-left: 60px; */
+  padding-left: 60px;
   padding-right: 67px;
   padding-top: 87px;
 }
