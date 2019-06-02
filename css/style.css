@@ -60,17 +60,19 @@ body {
   border: none;
   background: transparent;
   position: relative;
+  z-index: 10;
 }
 
 .button::before {
   content: " ";
   /* vertical-align: middle; */
   background-color: #f0c52e;
+
   display: inline-block;
   width: 100%;
   height: 8px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 7px;
 }
 
@@ -88,9 +90,11 @@ body {
 
 /* HEADER */
 .main-header {
-  background-color: #f7e296;
+  /* background-color: #f7e296; */
+  background: linear-gradient(white, white 15px, #f7e296 15px, #f7e296 100%);
   width: 1160px;
   margin: 0 auto;
+  margin-top: 23px;
 }
 
 .main-navigation {
@@ -315,15 +319,16 @@ body {
 .slider-controls label {
   display: inline-block;
   box-sizing: border-box;
-  width: 12px;
-  height: 12px;
+  width: 23px;
+  height: 23px;
   margin-right: 21px;
 
   vertical-align: top;
 
-  background-color: transparent;
-  border: 2px solid #000000;
-  border-radius: 50%;
+  background-image: url("../img/icons/slider-button-empty.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 12px 12px;
   cursor: pointer;
 }
 
@@ -341,7 +346,10 @@ body {
 #product-1:checked ~ .promo label[for="product-1"],
 #product-2:checked ~ .promo label[for="product-2"],
 #product-3:checked ~ .promo label[for="product-3"] {
-  background-color: #000000;
+  background-image: url("../img/icons/slider-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 12px 12px;
 }
 
 .promo-details {
