@@ -29,29 +29,52 @@
             </form>
           </div>
 
-          <ul class="user-navigation">
-            <li><a class="login-link" href="login.html">Войти</a></li>
-          </ul>
-
-          <div class="main-navigation-links">
-            <ul class="cart">
-              <li>
-                <a class="main-navigation-link compare-link" href="compare.html"
-                  >Сравнить</a
-                >
-              </li>
-              <li>
-                <a class="main-navigation-link cart-link" href="cart.html"
-                  >Корзина</a
-                >
-              </li>
+          <div class="navigation-wrapper">
+            <ul class="user-navigation">
+              <li><a class="login-link" href="login.html">Войти</a></li>
             </ul>
+
+            <div class="main-navigation-links">
+              <ul class="cart">
+                <li>
+                  <a
+                    class="main-navigation-link compare-link"
+                    href="compare.html"
+                    >Сравнить</a
+                  >
+                </li>
+                <li>
+                  <a class="main-navigation-link cart-link" href="cart.html"
+                    >Корзина</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div class="header-row-bottom">
           <div class="catalog-link-container">
-            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <a class="catalog-link" href="catalog.html">
+              Каталог товаров
+              <!-- Выпадающий список категорий -->
+              <div class="category-dropdown">
+                <ul>
+                  <div class="category-dropdown-column">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                    <li><a href="#">Экшн-камеры</a></li>
+                  </div>
+                  <div class="category-dropdown-column">
+                    <li><a href="#">Фитнес-браслеты</a></li>
+                    <li><a href="#">Умные часы</a></li>
+                  </div>
+                  <div class="category-dropdown-column">
+                    <li><a href="#">Квадрокоптеры</a></li>
+                  </div>
+                </ul>
+              </div>
+            </a>
           </div>
 
           <ul class="header-info">

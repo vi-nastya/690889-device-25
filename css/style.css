@@ -165,6 +165,12 @@ body {
   width: 84px;
 }
 
+/* navigation-wrapper */
+.navigation-wrapper {
+  display: flex;
+  width: 490px;
+}
+
 /* User auth */
 .user-navigation {
   display: flex;
@@ -263,11 +269,20 @@ body {
 .catalog-link-container {
   width: 250px;
   margin-right: auto;
+  position: relative;
 }
 
 /* Category dropdown */
 .category-dropdown {
   display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: #f7e296;
+  box-sizing: border-box;
+  padding-bottom: 42px;
+  width: 1160px;
+  padding-left: 60px;
+  left: -60px;
 }
 
 .catalog-link:hover + .category-dropdown {
