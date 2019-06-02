@@ -292,19 +292,56 @@ body {
 
 /* INDEX PAGE */
 /* Promo section */
+.promo {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.promo-slider-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 147px;
+  left: 999px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  margin-right: 21px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .promo-slide {
   display: none;
 }
 
-.promo-slide-current {
+#product-1:checked ~ .promo #slide-1,
+#product-2:checked ~ .promo #slide-2,
+#product-3:checked ~ .promo #slide-3 {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
 }
 
-.promo-navigation {
-  list-style: none;
-  padding: 0;
+#product-1:checked ~ .promo label[for="product-1"],
+#product-2:checked ~ .promo label[for="product-2"],
+#product-3:checked ~ .promo label[for="product-3"] {
+  background-color: #000000;
 }
 
 .promo-details {
