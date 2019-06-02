@@ -91,7 +91,12 @@ body {
 /* HEADER */
 .main-header {
   /* background-color: #f7e296; */
-  background: linear-gradient(white, white 15px, #f7e296 15px, #f7e296 100%);
+  background: linear-gradient(
+    #ffffff,
+    #ffffff 15px,
+    #f7e296 15px,
+    #f7e296 100%
+  );
   width: 1160px;
   margin: 0 auto;
   margin-top: 23px;
@@ -443,7 +448,13 @@ body {
 
 /* Info section */
 .info {
-  background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
+  background: linear-gradient(
+    #ffffff,
+    #ffffff 30px,
+    #e5e5e5 30px,
+    #e5e5e5 100%
+  );
   position: relative;
   z-index: 0;
   padding-bottom: 150px;
