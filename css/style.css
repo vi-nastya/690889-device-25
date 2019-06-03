@@ -217,7 +217,7 @@ body {
   left: 0px;
 }
 
-.main-navigation-links ul {
+.main-navigation-links {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1193,10 +1193,6 @@ input[type="radio"]:checked + .radio-label::before {
 
 .footer-navigation a:active {
   color: rgba(256, 256, 256, 0.3);
-}
-
-.footer .user-navigation::before {
-  fill: url(#f0c52e);
 }
 
 .footer .service-info {
