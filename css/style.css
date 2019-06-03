@@ -272,6 +272,25 @@ body {
   position: relative;
 }
 
+.catalog-link {
+  display: block;
+}
+
+.catalog-link span {
+  position: relative;
+}
+
+.catalog-link span::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icons/plus.svg");
+  background-repeat: no-repeat;
+  top: 3px;
+  right: -26px;
+}
+
 /* Category dropdown */
 .category-dropdown {
   display: none;
