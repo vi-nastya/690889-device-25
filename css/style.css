@@ -56,16 +56,31 @@ body {
   color: #000000;
   letter-spacing: 3.5px;
   text-align: center;
+  display: inline-block;
+  height: 40px;
   line-height: 24px;
   border: none;
-  background: transparent;
+  /* background-color: transparent; */
+  background: linear-gradient(
+    transparent,
+    transparent 16px,
+    #f0c52e 16px,
+    #f0c52e 24px,
+    transparent 24px,
+    transparent 40px
+  );
   position: relative;
   z-index: 10;
 }
 
-.button::before {
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #f0c52e;
+}
+
+/* .button::before {
   content: " ";
-  /* vertical-align: middle; */
   background-color: #f0c52e;
 
   display: inline-block;
@@ -74,15 +89,15 @@ body {
   position: absolute;
   z-index: 0;
   top: 7px;
-}
+} */
 
-.button:hover::before,
+/* .button:hover::before,
 .button:focus::before,
 .button:active::before {
   height: 40px;
   top: -10px;
   background-color: #f0c52e;
-}
+} */
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
