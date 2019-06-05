@@ -55,8 +55,10 @@ body {
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.5px;
-  text-align: center;
-  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 200px;
   height: 40px;
   line-height: 24px;
   border: none;
@@ -71,6 +73,7 @@ body {
   );
   position: relative;
   z-index: 10;
+  transition: all 0.2s;
 }
 
 .button:hover,
@@ -78,26 +81,6 @@ body {
 .button:active {
   background-color: #f0c52e;
 }
-
-/* .button::before {
-  content: " ";
-  background-color: #f0c52e;
-
-  display: inline-block;
-  width: 200px;
-  height: 8px;
-  position: absolute;
-  z-index: 0;
-  top: 7px;
-} */
-
-/* .button:hover::before,
-.button:focus::before,
-.button:active::before {
-  height: 40px;
-  top: -10px;
-  background-color: #f0c52e;
-} */
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
@@ -435,13 +418,16 @@ body {
 
 .promo-slide::after {
   content: "01";
-  font-weight: bold;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
   font-size: 179px;
   line-height: 179px;
   letter-spacing: 1.79px;
   position: absolute;
   color: #ffffff;
-  top: -18px;
+  width: 166px;
+  height: 113px;
+  top: -10px;
   left: 934px;
   z-index: 1;
 }
