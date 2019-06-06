@@ -415,8 +415,8 @@ body {
 
 .service-info a:hover,
 .service-info a:focus,
-.catalog-link:hover,
-.catalog-link:focus {
+.catalog-link[href]:hover,
+.catalog-link[href]:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -639,13 +639,14 @@ body {
   /* background-color: #e5e5e5; */
   background: linear-gradient(
     #ffffff,
-    #ffffff 30px,
-    #e5e5e5 30px,
+    #ffffff 66px,
+    #e5e5e5 66px,
     #e5e5e5 100%
   );
   position: relative;
   z-index: 0;
-  margin-bottom: 203px;
+  margin-bottom: 94px;
+  min-height: 353px;
 }
 
 .info-slide {
@@ -670,29 +671,48 @@ body {
 .info-slide-delivery {
   background-image: url("../img/icons/delivery.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 559px 49px;
 }
 
 .info-slide-credit {
   background-image: url("../img/icons/credit.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 559px 49px;
 }
 
 .info-slide-warranty {
   background-image: url("../img/icons/warranty.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 559px 49px;
 }
 
 .info-navigation {
   list-style: none;
   padding: 0;
-
+  padding-top: 30px;
   width: 280px;
+  min-height: 170px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.info-navigation a {
+.info-navigation li {
+  vertical-align: bottom;
+}
+
+.info-navigation::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 319px;
+  top: -49px;
+  left: 278px;
+  background-color: #000000;
+}
+
+.info-navigation-item {
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -701,49 +721,28 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: left;
-  padding-left: 20px;
-  vertical-align: middle;
   width: 160px;
   position: relative;
   z-index: 2;
-  display: inline-block;
+  box-sizing: border-box;
 }
 
-.info-navigation a::before {
-  content: " ";
-  /* vertical-align: middle; */
-  height: 8px;
-  background-color: #f0c52e;
-  display: inline-block;
-  width: 160px;
-  position: absolute;
-  z-index: -1;
-  top: 8px;
-}
-
-.info-navigation a:hover::before {
-  content: "";
-  height: 40px;
-  top: -10px;
-  z-index: -1;
-  background-color: #f0c52e;
-  display: inline-block;
-  width: 160px;
-  position: absolute;
-}
-
-a.info-navigation-current {
+.info-navigation-current {
+  background: none;
   background-color: #000000;
   color: #f0c52e;
   width: 278px;
+  min-height: 40px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-a.info-navigation-current::before {
+.info-navigation-current::before {
   display: none;
 }
 
-a.info-navigation-current:hover::before {
+.info-navigation-current:hover::before {
   display: none;
 }
 
@@ -751,7 +750,10 @@ a.info-navigation-current:hover::before {
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 47px;
+  letter-spacing: 0.47px;
   color: #000000;
+  display: inline-block;
+  margin-bottom: 24px;
 }
 
 /* Brands section */
@@ -761,7 +763,7 @@ a.info-navigation-current:hover::before {
 
 .brands-list {
   list-style: none;
-  margin-top: 100px;
+  margin: 0;
   display: flex;
   justify-content: space-around;
   padding: 0;
@@ -864,6 +866,19 @@ a.info-navigation-current:hover::before {
   display: block;
   padding-left: 35px;
   margin-bottom: 10px;
+  position: relative;
+}
+
+.delivery-services-item::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e6e6e6;
+  border-radius: 50%;
+  top: 12px;
+  left: 2px;
 }
 
 .about-us-contacts-container {
@@ -1380,9 +1395,11 @@ input[type="radio"]:checked + .radio-label::before {
 /* Catalog page pagination */
 .pagination {
   background-color: rgba(0, 0, 0, 0.08);
+  min-height: 70px;
   display: flex;
   width: 760px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pagination ul {
@@ -1391,12 +1408,27 @@ input[type="radio"]:checked + .radio-label::before {
   margin: 0;
 }
 
-.pagination a {
+.pagination li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.pagination-item {
   text-decoration: none;
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 16px;
   color: #000000;
+  opacity: 0.3;
+}
+
+.pagination-item:hover {
+  opacity: 0.6;
+}
+
+.pagination-item-current,
+.pagination-item:active {
+  opacity: 1;
 }
 
 .pagination-direction {
@@ -1409,20 +1441,18 @@ input[type="radio"]:checked + .radio-label::before {
   line-height: 24px;
   text-transform: uppercase;
   width: 137px;
+  min-height: 70px;
 
   border: none;
   background: transparent;
 }
 
 .pagination-direction:hover,
-.pagination-direction:focus,
-.pagination a:hover,
-.pagination a:focus {
+.pagination-direction:focus {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.pagination-direction:active,
-.pagination a:active {
+.pagination-direction:active {
   background-color: rgba(0, 0, 0, 0.08);
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1515,11 +1545,16 @@ input[type="radio"]:checked + .radio-label::before {
   color: rgba(256, 256, 256, 0.3);
 }
 
+.footer .user-navigation a::before {
+  display: none;
+}
+
 .footer .cart-link::before,
 .footer .compare-link::before {
   display: none;
 }
 
+.user-navigation svg,
 .main-navigation-link svg {
   fill: #ffc600;
   margin-right: 5px;
@@ -1535,11 +1570,13 @@ input[type="radio"]:checked + .radio-label::before {
 }
 
 .footer .service-info {
-  margin: 0 auto;
+  margin-left: 160px;
+  margin-right: auto;
 }
 
 .footer .service-info a {
   margin-right: 35px;
+  vertical-align: bottom;
 }
 
 .footer .service-info a {
@@ -1556,19 +1593,21 @@ input[type="radio"]:checked + .radio-label::before {
 }
 
 .footer-row-middle {
-  margin-bottom: 57px;
+  margin-bottom: 50px;
 }
 
 .footer-social-links {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin-left: 509px;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .social {
   display: inline-block;
+  vertical-align: top;
   width: 32px;
   height: 32px;
   margin-right: 23px;
@@ -1624,6 +1663,6 @@ input[type="radio"]:checked + .radio-label::before {
   width: 80px;
   height: 7px;
   background-color: #ffc600;
-  bottom: 14px;
+  bottom: 28px;
   left: 0;
 }

@@ -52,26 +52,26 @@
 
         <div class="header-row-bottom">
           <div class="catalog-link-container">
-            <a class="catalog-link" href="catalog.html">
+            <a class="catalog-link">
               <span>Каталог товаров</span>
-              <!-- Выпадающий список категорий -->
-              <div class="category-dropdown">
-                <ul>
-                  <div class="category-dropdown-column">
-                    <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="#">Моноподы для селфи</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
-                  </div>
-                  <div class="category-dropdown-column">
-                    <li><a href="#">Фитнес-браслеты</a></li>
-                    <li><a href="#">Умные часы</a></li>
-                  </div>
-                  <div class="category-dropdown-column">
-                    <li><a href="#">Квадрокоптеры</a></li>
-                  </div>
-                </ul>
-              </div>
             </a>
+            <!-- Выпадающий список категорий -->
+            <div class="category-dropdown">
+              <ul>
+                <div class="category-dropdown-column">
+                  <li><a href="vr.html">Виртуальная реальность</a></li>
+                  <li><a href="monopod.html">Моноподы для селфи</a></li>
+                  <li><a href="cameras.html">Экшн-камеры</a></li>
+                </div>
+                <div class="category-dropdown-column">
+                  <li><a href="fintess.html">Фитнес-браслеты</a></li>
+                  <li><a href="watch.html">Умные часы</a></li>
+                </div>
+                <div class="category-dropdown-column">
+                  <li><a href="quadrocopter.html">Квадрокоптеры</a></li>
+                </div>
+              </ul>
+            </div>
           </div>
 
           <ul class="service-info">
@@ -345,11 +345,13 @@
             <div class="pagination">
               <button type="button" class="pagination-direction">Назад</button>
               <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current">
-                  <a href="#">1</a>
+                <li>
+                  <a class="pagination-item pagination-item-current" href="#"
+                    >1</a
+                  >
                 </li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
+                <li><a class="pagination-item" href="#">2</a></li>
+                <li><a class="pagination-item" href="#">3</a></li>
               </ul>
               <button type="button" class="pagination-direction">Вперед</button>
             </div>
@@ -375,7 +377,19 @@
           <div class="footer-navigation">
             <ul class="user-navigation">
               <li>
-                <a href="profile.html" class="profile-link">Валентин Петухов</a>
+                <a href="profile.html" class="profile-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="12"
+                    viewBox="0 0 13 12"
+                  >
+                    <path
+                      d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"
+                    />
+                  </svg>
+                  Валентин Петухов</a
+                >
               </li>
               <li><a href="logout.html" class="logout-link">Выйти</a></li>
             </ul>
