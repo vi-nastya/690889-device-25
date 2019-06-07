@@ -348,7 +348,8 @@ body {
   left: -60px;
 }
 
-.catalog-link-container:hover .category-dropdown {
+.catalog-link-container:hover .category-dropdown,
+.catalog-link-container:focus .category-dropdown {
   display: block;
 }
 
@@ -726,7 +727,8 @@ body {
   box-sizing: border-box;
 }
 
-.info-navigation-current:hover {
+.info-navigation-current:hover,
+.info-navigation-current:focus {
   background-color: #000000;
 }
 
@@ -746,7 +748,8 @@ body {
   display: none;
 }
 
-.info-navigation-current:hover::before {
+.info-navigation-current:hover::before,
+.info-navigation-current:focus::before {
   display: none;
 }
 
@@ -1426,7 +1429,8 @@ input[type="radio"]:checked + .radio-label::before {
   opacity: 0.3;
 }
 
-.pagination-item:hover {
+.pagination-item:hover,
+.pagination-item:focus {
   opacity: 0.6;
 }
 
