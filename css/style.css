@@ -1337,18 +1337,24 @@ input[disabled] + .checkbox-label::before {
 }
 
 .catalog-item-actions {
-  display: none;
+  z-index: -10;
   position: absolute;
   width: 360px;
   height: 380px;
-}
-
-.catalog-item:hover .catalog-item-actions,
-.catalog-item:focus .catalog-item-actions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.catalog-item:hover .catalog-item-actions,
+.catalog-item:focus .catalog-item-actions {
+  z-index: 10;
+}
+
+.catalog-item:hover .catalog-image,
+.catalog-item:focus .catalog-image {
+  opacity: 0.7;
 }
 
 .catalog-item-actions a {
@@ -1357,12 +1363,6 @@ input[disabled] + .checkbox-label::before {
 
 .catalog-image-container {
   background-color: #d8d8d8;
-}
-
-.catalog-item:hover .catalog-image,
-.catalog-item:focus .catalog-image {
-  background-color: #eeeeee;
-  opacity: 0.7;
 }
 
 .catalog-description {
