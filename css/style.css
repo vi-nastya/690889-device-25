@@ -636,7 +636,6 @@ body {
 
 /* Info section */
 .info {
-  /* background-color: #e5e5e5; */
   background: linear-gradient(
     #ffffff,
     #ffffff 66px,
@@ -727,6 +726,11 @@ body {
   box-sizing: border-box;
 }
 
+.info-navigation-current:hover {
+  background-color: #000000;
+}
+
+.info-navigation-item:active,
 .info-navigation-current {
   background: none;
   background-color: #000000;
@@ -1302,6 +1306,8 @@ input[type="radio"]:checked + .radio-label::before {
 .catalog-item-actions {
   display: none;
   position: absolute;
+  width: 360px;
+  height: 380px;
 }
 
 .catalog-item:hover .catalog-item-actions,
@@ -1310,8 +1316,6 @@ input[type="radio"]:checked + .radio-label::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 360px;
-  height: 380px;
 }
 
 .catalog-item-actions a {
