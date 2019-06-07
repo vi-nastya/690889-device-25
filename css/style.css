@@ -1154,6 +1154,11 @@ body {
   height: 23px;
 }
 
+.checkbox-label:hover,
+.checkbox-label:focus {
+  opacity: 0.6;
+}
+
 .checkbox-label:hover::before,
 .checkbox-label:focus::before {
   opacity: 0.6;
@@ -1175,6 +1180,11 @@ input[type="checkbox"]:checked + .checkbox-label::before {
   height: 25px;
 }
 
+.radio-label:hover,
+.radio-label:focus {
+  opacity: 0.6;
+}
+
 .radio-label:hover::before,
 .radio-label:focus::before {
   opacity: 0.6;
@@ -1182,6 +1192,16 @@ input[type="checkbox"]:checked + .checkbox-label::before {
 
 input[type="radio"]:checked + .radio-label::before {
   background-image: url("../img/icons/radio-on.svg");
+}
+
+input[disabled] + .radio-label,
+input[disabled] + .checkbox-label {
+  opacity: 0.25;
+}
+
+input[disabled] + .radio-label::before,
+input[disabled] + .checkbox-label::before {
+  opacity: 0.25;
 }
 
 .filter-color {
