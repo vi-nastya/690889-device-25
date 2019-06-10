@@ -1131,7 +1131,8 @@ body {
 
 /* Price range */
 .range-controls {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -1174,9 +1175,15 @@ body {
 
 .price-label {
   display: inline-block;
+  font-family: Gilroy-Light, Geneva, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #464646;
+  line-height: 24px;
+  opacity: 0.2;
 }
 
-.price-range-input {
+.price-label-input {
   display: inline-block;
   background: none;
   border: none;
