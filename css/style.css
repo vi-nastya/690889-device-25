@@ -1129,6 +1129,63 @@ body {
   line-height: 24px;
 }
 
+/* Price range */
+.range-controls {
+  padding: 20px 0;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  display: block;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background-color: #acacad;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-label {
+  display: inline-block;
+}
+
+.price-range-input {
+  display: inline-block;
+  background: none;
+  border: none;
+  outline: none;
+  width: 60px;
+}
+
+/* Other filters */
+
 .checkbox-label,
 .radio-label {
   display: inline-block;
@@ -1598,8 +1655,10 @@ input[disabled] + .checkbox-label::before {
   margin-right: 5px;
 }
 
-.main-navigation-link:hover + svg,
-.main-navigation-link:focus + svg {
+.user-navigation a:hover svg,
+.user-navigation a:focus svg,
+.main-navigation-link:hover svg,
+.main-navigation-link:focus svg {
   opacity: 0.6;
 }
 
