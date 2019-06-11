@@ -577,5 +577,23 @@
         Закрыть
       </button>
     </div>
+
+    <script>
+      var link = document.querySelector(".contact-us-button");
+
+      var popup = document.querySelector(".contact-us-popup");
+
+      var close = popup.querySelector(".popup-close");
+
+      link.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.add("popup-show");
+      });
+
+      close.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup.classList.remove("popup-show");
+      });
+    </script>
   </body>
 </html>

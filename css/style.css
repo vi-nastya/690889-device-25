@@ -903,87 +903,6 @@ body {
   width: 260px;
 }
 
-/* Pop-ups */
-.contact-us-popup {
-  width: 960px;
-  height: 553px;
-  box-sizing: border-box;
-  border: none;
-  margin: 0 auto;
-  position: relative;
-  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-  padding: 90px 100px;
-}
-
-.contact-us-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact-us-form label {
-  font-family: Gilroy, Geneva, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.contact-us-form input,
-.contact-us-form textarea {
-  background-color: #f2f2f2;
-  border: none;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(70, 70, 70, 0.4);
-  font-family: OpenSans-Light, Arial, sans-serif;
-  font-weight: 300;
-  margin-top: 10px;
-}
-
-.contact-us-form input {
-  width: 360px;
-  height: 50px;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.contact-us-form textarea {
-  width: 760px;
-  min-height: 156px;
-  margin-bottom: 50px;
-}
-
-.map-popup {
-  position: relative;
-  width: 960px;
-  height: 550px;
-  margin: 0 auto;
-}
-
-.popup-close {
-  position: absolute;
-  right: 0px;
-  top: 22px;
-  background-image: url("../img/icons/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: transparent;
-  border: none;
-  font-size: 0;
-  width: 55px;
-  height: 55px;
-  opacity: 0.5;
-}
-
-.popup-close:hover,
-.popup-close:focus {
-  opacity: 1;
-}
-
-.popup-close:active {
-  opacity: 0.3;
-}
-
 /* CATALOG PAGE */
 .catalog-header-container {
   box-sizing: border-box;
@@ -1769,4 +1688,96 @@ input[disabled] + .checkbox-label::before {
   background-color: #ffc600;
   bottom: 28px;
   left: 0;
+}
+
+/* Pop-ups */
+.contact-us-popup {
+  display: none;
+  width: 960px;
+  height: 553px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0 auto;
+  background-color: #ffffff;
+  /* position: relative; */
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+  padding: 90px 100px;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-us-form label {
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.contact-us-form input {
+  width: 360px;
+  height: 50px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.contact-us-form textarea {
+  width: 760px;
+  min-height: 156px;
+  margin-bottom: 50px;
+}
+
+.map-popup {
+  display: none;
+  position: relative;
+  width: 960px;
+  height: 550px;
+  margin: 0 auto;
+}
+
+.popup-show {
+  display: block;
+  position: fixed;
+  top: 200px;
+  left: 100px;
+  z-index: 100;
+}
+
+.popup-close {
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  background-image: url("../img/icons/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  width: 55px;
+  height: 55px;
+  opacity: 0.5;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+  opacity: 1;
+}
+
+.popup-close:active {
+  opacity: 0.3;
 }
