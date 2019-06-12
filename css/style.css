@@ -362,7 +362,7 @@ body {
 
   box-sizing: border-box;
   width: 1160px;
-  min-height: 113px;
+  min-height: 150px;
   padding-left: 60px;
   padding-bottom: 30px;
   background-color: #f7e296;
@@ -451,18 +451,21 @@ body {
 }
 
 .promo-slide {
+  display: none;
   position: relative;
+  min-height: 486px;
 }
 
 /* decoration */
 .promo-slide::before {
   content: "";
   position: absolute;
+  top: 39px;
+  left: 600px;
+
   width: 100px;
   height: 7px;
   background-color: #ffffff;
-  top: 39px;
-  left: 600px;
 }
 
 .promo-slide::after {
@@ -525,16 +528,11 @@ body {
   cursor: pointer;
 }
 
-.promo-slide {
-  display: none;
-  min-height: 486px;
-}
-
 #product-1:checked ~ .promo #slide-1,
 #product-2:checked ~ .promo #slide-2,
 #product-3:checked ~ .promo #slide-3 {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 #product-1:checked ~ .promo label[for="product-1"],
@@ -544,6 +542,21 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 12px 12px;
+}
+
+.promo-slide-selfie img {
+  margin-left: 90px;
+  margin-right: 125px;
+}
+
+.promo-slide-fitness img {
+  margin-left: 103px;
+  margin-right: 138px;
+}
+
+.promo-slide-quadrocopter img {
+  margin-left: 60px;
+  margin-right: 42px;
 }
 
 .promo-details {
