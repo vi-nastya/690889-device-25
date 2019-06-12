@@ -337,10 +337,10 @@ body {
 /* Category dropdown */
 .category-dropdown {
   display: none;
+  z-index: 15;
   position: absolute;
   left: -60px;
-  top: 0;
-  z-index: 15;
+  top: 35px;
   box-sizing: border-box;
   width: 1160px;
   min-height: 113px;
@@ -354,16 +354,17 @@ body {
   display: block;
 }
 
-.category-dropdown ul {
-  display: flex;
+.category-dropdown-inner {
   width: 660px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .category-dropdown-column {
   width: 220px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .category-dropdown a {
