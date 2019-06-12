@@ -411,7 +411,7 @@
             <li class="delivery-services-item">Автотрейдинг</li>
             <li class="delivery-services-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="button map-button" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -601,20 +601,33 @@
     </div>
 
     <script>
-      var link = document.querySelector(".contact-us-button");
+      var contactUsLink = document.querySelector(".contact-us-button");
+      var mapLink = document.querySelector(".map-button");
 
-      var popup = document.querySelector(".contact-us-popup");
+      var contactPopup = document.querySelector(".contact-us-popup");
+      var mapPopup = document.querySelector(".map-popup");
 
-      var close = popup.querySelector(".popup-close");
+      var closeForm = contactPopup.querySelector(".popup-close");
+      var closeMap = mapPopup.querySelector(".popup-close");
 
-      link.addEventListener("click", function(evt) {
+      contactUsLink.addEventListener("click", function(evt) {
         evt.preventDefault();
-        popup.classList.add("popup-show");
+        contactPopup.classList.add("popup-show");
       });
 
-      close.addEventListener("click", function(evt) {
+      mapLink.addEventListener("click", function(evt) {
         evt.preventDefault();
-        popup.classList.remove("popup-show");
+        mapPopup.classList.add("popup-show");
+      });
+
+      closeForm.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        contactPopup.classList.remove("popup-show");
+      });
+
+      closeMap.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("popup-show");
       });
     </script>
   </body>

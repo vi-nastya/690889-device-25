@@ -16,6 +16,12 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/opensans.woff2);
+  font-weight: 400;
+}
+
 /* GLOBAL STYLES */
 body {
   margin: 0;
@@ -1726,10 +1732,14 @@ input[disabled] + .checkbox-label::before {
 /* Pop-ups */
 .contact-us-popup {
   display: none;
+  z-index: 100;
+  position: fixed;
+  top: 200px;
+  left: 50%;
   box-sizing: border-box;
   width: 960px;
   height: 553px;
-  margin: 0 auto;
+  margin-left: -480px;
   padding: 90px 100px;
 
   border: none;
@@ -1754,8 +1764,8 @@ input[disabled] + .checkbox-label::before {
 .contact-us-form textarea {
   margin-top: 10px;
 
-  font-family: OpenSans-Light, Arial, sans-serif;
-  font-weight: 300;
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: rgba(70, 70, 70, 0.4);
@@ -1777,24 +1787,23 @@ input[disabled] + .checkbox-label::before {
 }
 
 .map-popup {
-  position: relative;
   display: none;
-  width: 960px;
-  height: 550px;
-  margin: 0 auto;
-}
-
-.popup-show {
   z-index: 100;
   position: fixed;
   top: 200px;
-  left: 100px;
+  left: 50%;
+  width: 960px;
+  height: 550px;
+  margin-left: -480px;
+}
+
+.popup-show {
   display: block;
 }
 
 .popup-close {
   position: absolute;
-  right: 0px;
+  right: 22px;
   top: 22px;
   width: 55px;
   height: 55px;
