@@ -51,19 +51,22 @@ body {
 .button {
   position: relative;
   z-index: 10;
+  width: 200px;
+  height: 40px;
+  border: none;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 40px;
-  text-transform: uppercase;
+
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 3.5px;
   line-height: 24px;
+  text-transform: uppercase;
   color: #000000;
-  border: none;
+
   /* background-color: transparent; */
   background: linear-gradient(
     transparent,
@@ -91,10 +94,11 @@ body {
 .main-header {
   position: relative;
   box-sizing: border-box;
-  margin: 0 auto;
-  padding-top: 23px;
   width: 1160px;
   min-height: 226px;
+  margin: 0 auto;
+  padding-top: 23px;
+
   background: linear-gradient(#ffffff, #ffffff 40px, #f7e296 40px, #f7e296);
 }
 
@@ -135,6 +139,7 @@ body {
   width: 440px;
   margin-right: auto;
   padding-left: 36px;
+
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -145,6 +150,7 @@ body {
   position: absolute;
   bottom: 22px;
   left: 0;
+
   width: 16px;
   height: 16px;
   background-image: url("../img/icons/search.svg");
@@ -152,8 +158,8 @@ body {
 }
 
 .main-navigation-search {
-  display: flex;
   min-height: 49px;
+  display: flex;
   align-items: flex-end;
 }
 
@@ -161,9 +167,10 @@ body {
   box-sizing: border-box;
   height: 49px;
   padding-bottom: 14px;
-  background-color: #f7e296;
   border: none;
   border-bottom: 2px solid transparent;
+
+  background-color: #f7e296;
 }
 
 .main-navigation-search input[type="search"]:focus {
@@ -176,6 +183,7 @@ body {
   box-sizing: border-box;
   width: 84px;
   height: 49px;
+
   color: #000000;
   background-color: #f7e296;
   border: 2px solid #000000;
@@ -197,9 +205,9 @@ body {
 
 .navigation-search-button:active {
   width: 84px;
+  border: none;
   color: rgba(256, 256, 256, 0.3);
   background-color: #000000;
-  border: none;
 }
 
 /* navigation-wrapper */
@@ -246,6 +254,7 @@ body {
   position: absolute;
   top: 10px;
   left: -20px;
+
   width: 10px;
   height: 10px;
   background-image: url("../img/icons/compare.svg");
@@ -257,6 +266,7 @@ body {
   position: absolute;
   top: 9px;
   left: -20px;
+
   width: 12px;
   height: 12px;
   background-image: url("../img/icons/cart.svg");
@@ -269,6 +279,7 @@ body {
   position: absolute;
   top: 10px;
   left: 0px;
+
   width: 13px;
   height: 12px;
   background-image: url("../img/icons/user.svg");
@@ -328,6 +339,7 @@ body {
   position: absolute;
   top: 4px;
   right: 3px;
+
   width: 16px;
   height: 16px;
   background-image: url("../img/icons/plus.svg");
@@ -341,6 +353,7 @@ body {
   position: absolute;
   left: -60px;
   top: 35px;
+
   box-sizing: border-box;
   width: 1160px;
   min-height: 113px;
