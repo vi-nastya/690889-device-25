@@ -1434,6 +1434,11 @@ input[disabled] + .checkbox-label::before {
 .catalog-item-name {
   padding: 0;
   margin: 0;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 24px;
 }
 
 .catalog-price {
