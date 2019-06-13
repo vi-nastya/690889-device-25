@@ -1046,12 +1046,12 @@ body {
 
 .filters-inner {
   box-sizing: border-box;
-  width: 327px;
+  width: 330px;
   margin: 0;
   margin-left: auto;
-  padding-left: 60px;
-  padding-right: 67px;
-  padding-top: 78px;
+  padding-left: 58px;
+  padding-right: 71px;
+  padding-top: 80px;
 }
 
 .filters-header-container {
@@ -1071,12 +1071,16 @@ body {
   border: none;
 }
 
+.filter-item:last-of-type {
+  margin-bottom: 32px;
+}
+
 .filter-item::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 0;
-  width: 201px;
+  top: -12px;
+  left: 1px;
+  width: 202px;
   height: 2px;
   background-color: #000000;
 }
@@ -1091,7 +1095,8 @@ body {
 
 .filter-name {
   display: inline-block;
-  margin-bottom: 16px;
+  vertical-align: middle;
+  margin-bottom: 18px;
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -1103,8 +1108,8 @@ body {
 /* Price range */
 .range-controls {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 6px;
 }
 
 .range-controls .scale {
@@ -1121,7 +1126,7 @@ body {
 
 .range-controls .toggle {
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 0;
 
   display: block;
@@ -1137,7 +1142,7 @@ body {
 }
 
 .range-controls .toggle-min {
-  left: 0px;
+  left: -4px;
 }
 
 .range-controls .toggle-max {
@@ -1169,7 +1174,8 @@ body {
 .radio-label {
   position: relative;
   display: inline-block;
-  margin-left: 36px;
+  vertical-align: middle;
+  margin-left: 38px;
 
   font-family: OpenSans-Light;
   font-size: 14px;
@@ -1182,7 +1188,7 @@ body {
 .checkbox-label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -38px;
   top: 8px;
   box-sizing: border-box;
   width: 27px;
@@ -1208,7 +1214,7 @@ input[type="checkbox"]:checked + .checkbox-label::before {
 .radio-label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -38px;
   top: 7px;
   box-sizing: border-box;
   width: 25px;
