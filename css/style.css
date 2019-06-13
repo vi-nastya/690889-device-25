@@ -599,7 +599,11 @@ body {
 }
 
 .promo-features td {
-  padding-right: 40px;
+  padding-right: 74px;
+}
+
+.promo-features td:last-child {
+  padding-right: 0;
 }
 
 .promo-features tr:nth-of-type(1) td {
@@ -891,6 +895,7 @@ body {
 
 .about-us {
   width: 480px;
+  padding-right: 125px;
   display: flex;
   flex-direction: column;
 }
