@@ -414,7 +414,7 @@
             <li class="delivery-services-item">Автотрейдинг</li>
             <li class="delivery-services-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button map-button" href="#">Подробнее о нас</a>
+          <a class="button" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -603,35 +603,6 @@
       </button>
     </div>
 
-    <script>
-      var contactUsLink = document.querySelector(".contact-us-button");
-      var mapLink = document.querySelector(".map-button");
-
-      var contactPopup = document.querySelector(".contact-us-popup");
-      var mapPopup = document.querySelector(".map-popup");
-
-      var closeForm = contactPopup.querySelector(".popup-close");
-      var closeMap = mapPopup.querySelector(".popup-close");
-
-      contactUsLink.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        contactPopup.classList.add("popup-show");
-      });
-
-      mapLink.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("popup-show");
-      });
-
-      closeForm.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        contactPopup.classList.remove("popup-show");
-      });
-
-      closeMap.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        mapPopup.classList.remove("popup-show");
-      });
-    </script>
+    <script src="js/modals.js"></script>
   </body>
 </html>

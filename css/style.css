@@ -1770,7 +1770,7 @@ input[disabled] + .checkbox-label::before {
   display: none;
   z-index: 100;
   position: fixed;
-  top: 200px;
+  top: 100px;
   left: 50%;
   box-sizing: border-box;
   width: 960px;
@@ -1826,7 +1826,7 @@ input[disabled] + .checkbox-label::before {
   display: none;
   z-index: 100;
   position: fixed;
-  top: 200px;
+  top: 100px;
   left: 50%;
   width: 960px;
   height: 550px;
