@@ -371,6 +371,7 @@ body {
   min-height: 150px;
   padding-left: 60px;
   padding-bottom: 30px;
+  display: flex;
 
   background-color: #f7e296;
   transition: all 0.2s;
@@ -381,16 +382,11 @@ body {
   opacity: 1;
 }
 
-.category-dropdown-inner {
-  width: 660px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .category-dropdown-column {
   width: 220px;
   padding: 0;
   margin: 0;
+  margin-right: 58px;
   list-style: none;
 }
 
