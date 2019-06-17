@@ -1166,10 +1166,11 @@ a {
   font-family: OpenSans-Light, Arial, sans-serif;;
   font-size: 14px;
   color: #000000;
-  letter-spacing: 0.14px;
+  letter-spacing: 0.1px;
   line-height: 40px;
   cursor: pointer;
 }
+
 
 .checkbox-label::before {
   content: "";
@@ -1278,6 +1279,7 @@ input[disabled] + .checkbox-label::before {
 
 .sorting-param {
   margin-right: 25px;
+  letter-spacing: normal;
   color: inherit;
   opacity: 0.3;
 }
