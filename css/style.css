@@ -1367,6 +1367,41 @@ input[disabled] + .checkbox-label::before {
   margin-bottom: 46px;
 }
 
+.catalog-item-new::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  right: 27px;
+  z-index: 100;
+  width: 61px;
+  height: 61px;
+  box-sizing: border-box;
+  opacity: 0.1;
+  border: solid 2px black;
+  border-radius: 50%;
+}
+
+.catalog-item-new::after {
+  content: "new";
+  position: absolute;
+  top: 47px;
+  right: 38px;
+  z-index: 100;
+  box-sizing: border-box;
+  font-family: Gilroy, Geneva, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.2;
+}
+
+
+
 .catalog-item-actions {
   z-index: -10;
   position: absolute;
