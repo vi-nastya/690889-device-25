@@ -35,6 +35,10 @@ body {
   color: #464646;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 1160px;
   margin: 0 auto;
@@ -112,6 +116,7 @@ body {
   display: inline-block;
   width: 164px;
   height: 36px;
+  vertical-align: middle;
 }
 
 .main-header-logo[href]:hover,
@@ -254,6 +259,7 @@ body {
   position: relative;
   margin-left: 65px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .compare-link::before {
@@ -389,7 +395,6 @@ body {
   font-size: 15px;
   letter-spacing: 0.15px;
   line-height: 36px;
-  text-decoration: none;
   color: #000000;
 }
 
@@ -430,7 +435,6 @@ body {
   color: #000000;
   letter-spacing: 3.6px;
   line-height: 24px;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -796,6 +800,7 @@ body {
 
 .info-section-name {
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: 24px;
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
@@ -869,7 +874,6 @@ body {
 
 .about-us h2,
 .contacts h2 {
-  display: inline-block;
   margin-bottom: 23px;
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
@@ -967,19 +971,21 @@ body {
 .breadcrumbs {
   padding: 0;
   display: flex;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
   font-size: 14px;
   letter-spacing: 0.14px;
   line-height: 24px;
   list-style: none;
+  opacity: 0.3;
 }
 
 .breadcrumbs-link {
   position: relative;
   margin-right: 40px;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.3);
-  text-decoration: none;
+  vertical-align: middle;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .breadcrumbs-link:not(.breadcrumbs-current)::after {
@@ -996,11 +1002,11 @@ body {
 
 .breadcrumbs-link:hover,
 .breadcrumbs-link:focus {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.1;
 }
 
 .page-header {
@@ -1142,6 +1148,7 @@ body {
 
 .price-label {
   display: inline-block;
+  vertical-align: middle;
   font-family: Gilroy-Light, Geneva, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -1152,6 +1159,7 @@ body {
 
 .price-label-input {
   display: inline-block;
+  vertical-align: middle;
   width: 60px;
 
   background: none;
@@ -1168,7 +1176,7 @@ body {
   vertical-align: middle;
   margin-left: 38px;
 
-  font-family: OpenSans-Light;
+  font-family: OpenSans-Light, Arial, sans-serif;;
   font-size: 14px;
   color: #000000;
   letter-spacing: 0.14px;
@@ -1491,6 +1499,7 @@ input[disabled] + .checkbox-label::before {
 
 .pagination li {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 30px;
 }
 
@@ -1729,6 +1738,7 @@ input[disabled] + .checkbox-label::before {
 
 .developer-link {
   display: inline-block;
+  vertical-align: top;
   width: 27px;
   height: 35px;
 
