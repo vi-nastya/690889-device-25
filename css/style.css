@@ -140,18 +140,8 @@ body {
 }
 
 /* Search */
-.main-navigation-search-container {
-  position: relative;
-  width: 440px;
-  margin-right: auto;
-  padding-left: 36px;
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.main-navigation-search-container::before {
+.main-navigation-search::before {
   content: "";
   position: absolute;
   bottom: 25px;
@@ -164,6 +154,11 @@ body {
 }
 
 .main-navigation-search {
+  position: relative;
+  width: 440px;
+  margin-right: auto;
+  padding-left: 36px;
+  
   min-height: 49px;
   display: flex;
   align-items: flex-end;
