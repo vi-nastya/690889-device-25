@@ -93,73 +93,71 @@
         <div class="filters-header-container">
           <h2 class="filters-header">Фильтр:</h2>
         </div>
-        <div class="filters-inner">
-          <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="filter-item filter-price">
-              <legend class="filter-name">Стоимость</legend>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <label class="toggle toggle-min" for="min-price"></label>
-                <label class="toggle toggle-max" for="max-price"></label>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="filter-item filter-price">
+            <legend class="filter-name">Стоимость</legend>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="price-controls">
-                <span class="price-label price-label-min">
-                  от
-                  <input class="price-label-input" name="min-price" id="min-price" type="text" value="0" />
-                </span>
-                <span class="price-label price-label-max">
-                  до
-                  <input class="price-label-input" name="max-price" id="max-price" type="text" value="5000" /></span>
-              </div>
-            </fieldset>
+              <label class="toggle toggle-min" for="min-price"></label>
+              <label class="toggle toggle-max" for="max-price"></label>
+            </div>
+            <div class="price-controls">
+              <span class="price-label price-label-min">
+                от
+                <input class="price-label-input" name="min-price" id="min-price" type="text" value="0" />
+              </span>
+              <span class="price-label price-label-max">
+                до
+                <input class="price-label-input" name="max-price" id="max-price" type="text" value="5000" /></span>
+            </div>
+          </fieldset>
 
-            <fieldset class="filter-item filter-color">
-              <legend class="filter-name">Цвет</legend>
+          <fieldset class="filter-item filter-color">
+            <legend class="filter-name">Цвет</legend>
 
-              <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
-              <label class="checkbox-label" for="color-black">
-                Черный
-              </label>
+            <input type="checkbox" class="visually-hidden" name="color" id="color-black" value="black" checked />
+            <label class="checkbox-label" for="color-black">
+              Черный
+            </label>
 
-              <input type="checkbox" class="visually-hidden" name="color" id="color-white" value="white" />
-              <label class="checkbox-label" for="color-white">
-                Белый
-              </label>
+            <input type="checkbox" class="visually-hidden" name="color" id="color-white" value="white" />
+            <label class="checkbox-label" for="color-white">
+              Белый
+            </label>
 
-              <input type="checkbox" class="visually-hidden" name="color" id="color-blue" value="blue" checked />
-              <label class="checkbox-label" for="color-blue">
-                Синий
-              </label>
+            <input type="checkbox" class="visually-hidden" name="color" id="color-blue" value="blue" checked />
+            <label class="checkbox-label" for="color-blue">
+              Синий
+            </label>
 
-              <input type="checkbox" class="visually-hidden" name="color" id="color-red" value="red" checked />
-              <label class="checkbox-label" for="color-red">
-                Красный
-              </label>
+            <input type="checkbox" class="visually-hidden" name="color" id="color-red" value="red" checked />
+            <label class="checkbox-label" for="color-red">
+              Красный
+            </label>
 
-              <input type="checkbox" class="visually-hidden" name="color" id="color-pink" value="pink" />
-              <label class="checkbox-label" for="color-pink">
-                Розовый
-              </label>
-            </fieldset>
-            <fieldset class="filter-item filter-bluetooth">
-              <legend class="filter-name">Bluetooth</legend>
-              <input type="radio" class="visually-hidden" name="bluetooth" id="bluetooth-yes" value="yes" checked />
-              <label for="bluetooth-yes" class="radio-label">
-                Есть
-              </label>
+            <input type="checkbox" class="visually-hidden" name="color" id="color-pink" value="pink" />
+            <label class="checkbox-label" for="color-pink">
+              Розовый
+            </label>
+          </fieldset>
+          <fieldset class="filter-item filter-bluetooth">
+            <legend class="filter-name">Bluetooth</legend>
+            <input type="radio" class="visually-hidden" name="bluetooth" id="bluetooth-yes" value="yes" checked />
+            <label for="bluetooth-yes" class="radio-label">
+              Есть
+            </label>
 
-              <input type="radio" class="visually-hidden" name="bluetooth" id="bluetooth-no" value="no" />
-              <label for="bluetooth-no" class="radio-label">
-                Нет
-              </label>
-            </fieldset>
-            <button type="submit" class="button filters-button">
-              Показать
-            </button>
-          </form>
-        </div>
+            <input type="radio" class="visually-hidden" name="bluetooth" id="bluetooth-no" value="no" />
+            <label for="bluetooth-no" class="radio-label">
+              Нет
+            </label>
+          </fieldset>
+          <button type="submit" class="button filters-button">
+            Показать
+          </button>
+        </form>
       </section>
 
       <div class="catalog-wrapper">
