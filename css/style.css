@@ -301,7 +301,6 @@ a {
 
 .main-navigation-link,
 .user-navigation a {
-  text-decoration: none;
   line-height: 30px;
   color: #000000;
 }
@@ -639,7 +638,6 @@ a {
   line-height: 24px;
   letter-spacing: 0.18px;
   text-align: left;
-  text-decoration: none;
 }
 
 .category-icon-container {
@@ -769,7 +767,6 @@ a {
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .info-navigation-current:hover,
@@ -901,10 +898,6 @@ a {
   flex-direction: column;
 }
 
-.about-us a {
-  text-decoration: none;
-}
-
 .delivery-services {
   padding: 0;
   margin: 0;
@@ -976,7 +969,6 @@ a {
   letter-spacing: 0.14px;
   line-height: 24px;
   list-style: none;
-  opacity: 0.3;
 }
 
 .breadcrumbs-link {
@@ -1291,7 +1283,6 @@ input[disabled] + .checkbox-label::before {
 
 .sorting-param {
   margin-right: 25px;
-  text-decoration: none;
   color: inherit;
   opacity: 0.3;
 }
@@ -1316,7 +1307,6 @@ input[disabled] + .checkbox-label::before {
 
 .sorting-order-item {
   position: relative;
-  text-decoration: none;
 }
 
 .sorting-order-asc::before {
@@ -1401,10 +1391,6 @@ input[disabled] + .checkbox-label::before {
   opacity: 0.7;
 }
 
-.catalog-item-actions a {
-  text-decoration: none;
-}
-
 .catalog-image-container {
   background-color: #d8d8d8;
 }
@@ -1427,7 +1413,6 @@ input[disabled] + .checkbox-label::before {
   color: #000000;
   letter-spacing: 0.18px;
   line-height: 24px;
-  text-decoration: none;
 }
 
 .catalog-item-name {
@@ -1457,7 +1442,6 @@ input[disabled] + .checkbox-label::before {
   letter-spacing: 0.13px;
   text-align: center;
   line-height: 36px;
-  text-decoration: none;
   opacity: 0.5;
 }
 
@@ -1504,7 +1488,6 @@ input[disabled] + .checkbox-label::before {
 }
 
 .pagination-item {
-  text-decoration: none;
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1626,7 +1609,6 @@ input[disabled] + .checkbox-label::before {
 .footer-navigation a,
 .footer-developer a,
 .footer-phone a {
-  text-decoration: none;
   color: rgba(256, 256, 256, 0.7);
 }
 
