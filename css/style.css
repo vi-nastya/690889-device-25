@@ -1,18 +1,18 @@
 @font-face {
   font-family: Gilroy;
-  src: url(../fonts/Gilroy-ExtraBold.otf);
+  src: url(../fonts/gilroyextrabold.woff2);
   font-weight: 800;
 }
 
 @font-face {
   font-family: Gilroy-Light;
-  src: url(../fonts/Gilroy-Light.otf);
+  src: url(../fonts/gilroylight.woff2);
   font-weight: 300;
 }
 
 @font-face {
   font-family: OpenSans-Light;
-  src: url(../fonts/OpenSans-Light.ttf);
+  src: url(../fonts/opensanslight.woff2);
   font-weight: 300;
 }
 
