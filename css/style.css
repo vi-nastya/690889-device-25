@@ -412,14 +412,12 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-right: 35px;
   display: flex;
   align-items: center;
   width: 500px;
 }
 
-.service-link-delivery {
-  margin-right: 35px;
-}
 
 .service-info li:nth-last-of-type(1){
   margin-left: auto;
@@ -1610,13 +1608,6 @@ input[disabled] + .checkbox-label::before {
   margin-bottom: 29px;
 }
 
-.footer-info {
-  display: flex;
-}
-
-.footer-info li {
-  width: 160px;
-}
 
 .footer-address,
 .footer-phone {
@@ -1631,67 +1622,62 @@ input[disabled] + .checkbox-label::before {
   list-style: none;
 }
 
-.footer-row-top a,
-.footer-phone a {
-  color: rgba(256, 256, 256, 0.7);
+.footer-user-navigation, .footer-main-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-.footer-navigation a:hover,
-.footer-navigation a:focus {
+.footer-user-navigation-link,
+.footer-main-navigation-link {
   color: #ffffff;
+  opacity: 0.7;
 }
 
-.footer-navigation a:active {
-  color: rgba(256, 256, 256, 0.3);
+.footer-user-navigation-link:hover,
+.footer-user-navigation-link:focus,
+.footer-main-navigation-link:hover,
+.footer-main-navigation-link:focus {
+  opacity: 0.1;
 }
 
-.footer .user-navigation a::before {
-  display: none;
+.footer-user-navigation-link:active
+.footer-main-navigation-link:active {
+  opacity: 0.3;
 }
 
-.footer .cart-link::before,
-.footer .compare-link::before {
-  display: none;
-}
 
-.user-navigation svg,
-.main-navigation-link svg {
+
+.footer-user-navigation-link svg,
+.footer-main-navigation-link svg {
   margin-right: 5px;
   fill: #ffc600;
 }
 
-.user-navigation a:hover svg,
-.user-navigation a:focus svg,
-.main-navigation-link:hover svg,
-.main-navigation-link:focus svg {
+.footer-user-navigation-link:hover svg,
+.footer-user-navigation-link:focus svg,
+.footer-main-navigation-link:hover svg,
+.footer-main-navigation-link:focus svg {
   opacity: 0.6;
 }
 
-.main-navigation-link:active svg {
+.footer-user-navigation-link:active svg
+.footer-main-navigation-link:active svg {
   opacity: 0.3;
 }
 
-.footer .service-info {
+.footer-service-info {
   margin-left: 160px;
   margin-right: auto;
+  list-style: none;
+  display: flex;
 }
 
-.footer .service-info a {
+.footer .service-link {
   margin-right: 35px;
   vertical-align: bottom;
-}
-
-.footer .service-info a {
   color: #ffffff;
-}
-
-.footer .service-info a:hover,
-.footer .service-info a:focus {
-  color: rgba(256, 256, 256, 0.6);
-}
-
-.footer .service-info a:active {
-  color: rgba(256, 256, 256, 0.3);
 }
 
 .footer-row-middle {
