@@ -162,7 +162,6 @@ a {
   position: relative;
   width: 440px;
   margin-right: auto;
-  padding-left: 36px;
   
   min-height: 49px;
   display: flex;
@@ -172,7 +171,9 @@ a {
 .main-navigation-search input[type="search"] {
   box-sizing: border-box;
   height: 49px;
+  width: 356px;
   padding-bottom: 14px;
+  padding-left: 36px;
   border: none;
   border-bottom: 2px solid transparent;
 
@@ -1625,8 +1626,7 @@ input[disabled] + .checkbox-label::before {
   list-style: none;
 }
 
-.footer-navigation a,
-.footer-developer a,
+.footer-row-top a,
 .footer-phone a {
   color: rgba(256, 256, 256, 0.7);
 }
