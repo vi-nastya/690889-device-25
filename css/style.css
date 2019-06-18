@@ -442,7 +442,12 @@ a {
 .service-info a:focus,
 .catalog-link[href]:hover,
 .catalog-link[href]:focus {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
+}
+
+.service-info a:active,
+.catalog-link[href]:active {
+  opacity: 0.3;
 }
 
 /* INDEX PAGE */
