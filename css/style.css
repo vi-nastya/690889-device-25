@@ -72,7 +72,7 @@ a {
   font-family: Gilroy, Geneva, sans-serif;
   font-weight: 800;
   font-size: 18px;
-  letter-spacing: 3.5px;
+  letter-spacing: 3.6px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -534,7 +534,7 @@ a {
   font-size: 15px;
 }
 
-.promo-slide .button {
+.promo-slide-button {
   width: 220px;
 }
 
@@ -891,7 +891,7 @@ a {
   cursor: pointer;
 }
 
-.about-us-contacts-container .button {
+.contact-us-button, .about-us-button{
   width: 260px;
 }
 
@@ -1547,7 +1547,7 @@ input[disabled] + .checkbox-label::before {
   opacity: 0.3;
 }
 
-.footer-logo .footer-logo-image {
+.footer-logo-image {
   fill: #ffc600;
 }
 
@@ -1719,8 +1719,7 @@ input[disabled] + .checkbox-label::before {
   line-height: 24px;
 }
 
-.contact-us-form input,
-.contact-us-form textarea {
+.contact-us-form-field  {
   margin-top: 10px;
 
   font-family: OpenSans, Arial, sans-serif;
@@ -1732,14 +1731,14 @@ input[disabled] + .checkbox-label::before {
   border: none;
 }
 
-.contact-us-form input {
+.contact-us-form-name, .contact-us-form-email {
   display: block;
   width: 360px;
   height: 50px;
   margin-bottom: 30px;
 }
 
-.contact-us-form textarea {
+.contact-us-form-text {
   width: 760px;
   min-height: 156px;
   margin-bottom: 50px;

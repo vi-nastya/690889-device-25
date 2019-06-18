@@ -120,7 +120,7 @@
               килограмм.
             </p>
 
-            <button type="button" class="button">Подробнее</button>
+            <button type="button" class="button promo-slide-button">Подробнее</button>
             <table class="promo-features">
               <tr>
                 <td class="promo-feature-value">8,5 м</td>
@@ -330,7 +330,7 @@
           <li class="delivery-services-item">Автотрейдинг</li>
           <li class="delivery-services-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="#">Подробнее о нас</a>
+        <a class="button about-us-button" href="#">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -447,17 +447,18 @@
     <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="GET">
       <label>
         Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия" />
+        <input class="contact-us-form-field contact-us-form-name" type="text" name="name" placeholder="Имя Фамилия" />
       </label>
 
       <label>
         Ваш e-mail:
-        <input type="email" name="email" placeholder="email@example.com" />
+        <input class="contact-us-form-field contact-us-form-email" type="email" name="email"
+          placeholder="email@example.com" />
       </label>
 
       <label>
         Текст письма:
-        <textarea rows="5" name="text">В свободной форме</textarea>
+        <textarea class="contact-us-form-field contact-us-form-text" rows="5" name="text">В свободной форме</textarea>
       </label>
 
       <button type="submit" class="button">Отправить</button>
