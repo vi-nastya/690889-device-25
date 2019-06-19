@@ -106,7 +106,7 @@ a {
   width: 1160px;
   min-height: 226px;
   margin: 0 auto;
-  padding-top: 23px;
+  padding-top: 21px;
 
   background: linear-gradient(#ffffff, #ffffff 40px, #f7e296 40px, #f7e296);
 }
@@ -139,7 +139,7 @@ a {
 }
 
 .header-row-top {
-  margin-top: 16px;
+  margin-top: 25px;
   margin-bottom: 21px;
 }
 
@@ -147,7 +147,7 @@ a {
 .main-navigation-search::before {
   content: "";
   position: absolute;
-  bottom: 25px;
+  bottom: 24px;
   left: 3px;
 
   width: 16px;
@@ -158,7 +158,7 @@ a {
 
 .main-navigation-search {
   position: relative;
-  width: 440px;
+  width: 520px;
   margin-right: auto;
   
   min-height: 49px;
@@ -259,18 +259,6 @@ a {
 
 .actions-navigation-link:active,
 .user-navigation-link:active {
-  opacity: 0.3;
-}
-
-.actions-navigation-link:hover .actions-navigation-icon,
-.actions-navigation-link:focus .actions-navigation-icon,
-.user-navigation-link:hover .user-navigation-icon,
-.user-navigation-link:focus .user-navigation-icon{
-  opacity: 0.6;
-}
-
-.actions-navigation-link:active .actions-navigation-icon,
-.user-navigation-link:active  .user-navigation-icon{
   opacity: 0.3;
 }
 
@@ -1590,8 +1578,11 @@ input[disabled] + .checkbox-label::before {
   opacity: 1;
 }
 
-.footer-navigation-link:active .footer-navigation-link-text {
-  opacity: 0.3;
+.footer-navigation-link:hover .user-navigation-icon,
+.footer-navigation-link:focus .user-navigation-icon,
+.footer-navigation-link:hover .actions-navigation-icon,
+.footer-navigation-link:focus .actions-navigation-icon{
+  opacity: 0.6;
 }
 
 
