@@ -1760,6 +1760,20 @@ input[disabled] + .checkbox-label::before {
   margin-left: -480px;
 }
 
+.map-popup iframe {
+    position: relative;
+    z-index: 2;
+  
+    border: none;
+}
+
+.map-popup img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .popup-show {
   display: block;
 }
