@@ -551,6 +551,7 @@ a {
 
 .promo-features {
   margin-top: 47px;
+  margin-left: -2px;
 }
 
 .promo-features td {
@@ -567,6 +568,7 @@ a {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.36px;
+  padding-bottom: 4px;
 }
 
 .promo-feature-name {
@@ -579,7 +581,7 @@ a {
 
 /* Categories section */
 .categories {
-  margin-bottom: 116px;
+  margin-bottom: 115px;
 }
 
 .categories-list {
@@ -633,6 +635,7 @@ a {
 
 .category-item-name {
   display: inline-block;
+  max-width: 160px;
   vertical-align: middle;
   margin-top: 33px;
 }
@@ -641,7 +644,7 @@ a {
 .info {
   z-index: 0;
   position: relative;
-  min-height: 353px;
+  min-height: 354px;
   margin-bottom: 94px;
 
   background: linear-gradient(
@@ -702,21 +705,21 @@ a {
   list-style: none;
 }
 
-.info-navigation li {
+.info-navigation-item {
   vertical-align: bottom;
 }
 
 .info-navigation::before {
   content: "";
   position: absolute;
-  top: -49px;
-  left: 278px;
+  top: -50px;
+  left: 277px;
   width: 7px;
   height: 319px;
   background-color: #000000;
 }
 
-.info-navigation-item {
+.info-navigation-item-link {
   z-index: 2;
   position: relative;
   box-sizing: border-box;
@@ -731,13 +734,13 @@ a {
   text-transform: uppercase;
 }
 
-.info-navigation-current:hover,
-.info-navigation-current:focus {
+.info-navigation-link-current:hover,
+.info-navigation-link-current:focus {
   background-color: #000000;
 }
 
-.info-navigation-item:active,
-.info-navigation-current {
+.info-navigation-item-link:active,
+.info-navigation-link-current {
   width: 278px;
   min-height: 40px;
   padding-left: 20px;
@@ -748,16 +751,17 @@ a {
   color: #f0c52e;
 }
 
-.info-navigation-current::before {
+.info-navigation-link-current::before {
   display: none;
 }
 
-.info-navigation-current:hover::before,
-.info-navigation-current:focus::before {
+.info-navigation-link-current:hover::before,
+.info-navigation-link-current:focus::before {
   display: none;
 }
 
 .info-section-name {
+  max-width: 500px;
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 24px;
@@ -766,6 +770,10 @@ a {
   font-size: 47px;
   letter-spacing: 0.47px;
   color: #000000;
+}
+
+.info-details {
+  max-width: 440px;
 }
 
 /* Brands section */
@@ -777,7 +785,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
