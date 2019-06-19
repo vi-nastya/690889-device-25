@@ -1795,6 +1795,7 @@ input[disabled] + .checkbox-label::before {
 }
 
 .map-popup .popup-close {
+  z-index: 3;
   top: 30px;
   right: 37px;
 }
