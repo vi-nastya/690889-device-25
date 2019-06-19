@@ -1717,11 +1717,14 @@ input[disabled] + .checkbox-label::before {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: normal;
+  color: #000000;
 }
 
 .contact-us-form-field  {
+  box-sizing: border-box;
   margin-top: 10px;
-
+  padding-left: 20px;
   font-family: OpenSans, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1739,9 +1742,11 @@ input[disabled] + .checkbox-label::before {
 }
 
 .contact-us-form-text {
+  box-sizing: border-box;
   width: 760px;
   min-height: 156px;
   margin-bottom: 50px;
+  padding-top: 10px;
 }
 
 .map-popup {
