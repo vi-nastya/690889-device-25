@@ -657,17 +657,12 @@ a {
 
 .info-slide {
   display: none;
-  width: 700px;
+  width: 750px;
   margin-left: 120px;
 }
 
 .info-details {
   width: 430px;
-}
-
-.info-slide-current {
-  display: flex;
-  flex-direction: column;
 }
 
 .info-inner {
@@ -683,43 +678,41 @@ a {
 .info-slide-credit {
   background-image: url("../img/icons/credit.svg");
   background-repeat: no-repeat;
-  background-position: 559px 49px;
+  background-position: 535px 25px;
 }
 
 .info-slide-warranty {
   background-image: url("../img/icons/warranty.svg");
   background-repeat: no-repeat;
-  background-position: 559px 49px;
+  background-position: 544px 25px;
 }
 
 .info-navigation {
   position: relative;
   width: 280px;
-  min-height: 170px;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 46px;
 
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  list-style: none;
 }
 
 .info-navigation-item {
   vertical-align: bottom;
+  margin-bottom: 24px;
 }
 
 .info-navigation::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -34px;
   left: 277px;
   width: 7px;
   height: 319px;
   background-color: #000000;
 }
 
-.info-navigation-item-link {
+.info-navigation-item {
   z-index: 2;
   position: relative;
   box-sizing: border-box;
@@ -734,13 +727,16 @@ a {
   text-transform: uppercase;
 }
 
-.info-navigation-link-current:hover,
-.info-navigation-link-current:focus {
-  background-color: #000000;
+#info-1:checked ~ .info .info-slide-delivery,
+#info-2:checked ~ .info .info-slide-warranty,
+#info-3:checked ~ .info .info-slide-credit {
+  display: flex;
+  flex-direction: column;
 }
 
-.info-navigation-item-link:active,
-.info-navigation-link-current {
+#info-1:checked ~ .info label[for="info-1"],
+#info-2:checked ~ .info label[for="info-2"],
+#info-3:checked ~ .info label[for="info-3"] {
   width: 278px;
   min-height: 40px;
   padding-left: 20px;
@@ -749,15 +745,6 @@ a {
   background: none;
   background-color: #000000;
   color: #f0c52e;
-}
-
-.info-navigation-link-current::before {
-  display: none;
-}
-
-.info-navigation-link-current:hover::before,
-.info-navigation-link-current:focus::before {
-  display: none;
 }
 
 .info-section-name {

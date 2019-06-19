@@ -95,9 +95,9 @@
 
   <main>
     <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
-    <input class="visually-hidden" type="radio" id="promo-1" name="toggle" checked />
-    <input class="visually-hidden" type="radio" id="promo-2" name="toggle" />
-    <input class="visually-hidden" type="radio" id="promo-3" name="toggle" />
+    <input class="visually-hidden" type="radio" id="promo-1" name="toggle-promo" checked />
+    <input class="visually-hidden" type="radio" id="promo-2" name="toggle-promo" />
+    <input class="visually-hidden" type="radio" id="promo-3" name="toggle-promo" />
     <section class="promo container">
       <div class="slider-controls">
         <label for="promo-1">Первый</label>
@@ -243,23 +243,33 @@
       </ul>
     </section>
 
+    <!-- <div class="slider-controls">
+        <label for="promo-1">Первый</label>
+        <label for="promo-2">Второй</label>
+        <label for="promo-3">Третий</label>
+      </div> -->
+
+    <input class="visually-hidden" type="radio" id="info-1" name="toggle-info" checked />
+    <input class="visually-hidden" type="radio" id="info-2" name="toggle-info" />
+    <input class="visually-hidden" type="radio" id="info-3" name="toggle-info" />
     <section class="info">
+
       <div class="info-inner container">
         <h2 class="visually-hidden">Как мы работаем</h2>
-        <ul class="info-navigation">
-          <li class="info-navigation-item">
-            <a class="info-navigation-item-link button info-navigation-link-current" href="#">Доставка</a>
-          </li>
-          <li class="info-navigation-item">
-            <a class="info-navigation-item-link button" href="#">Гарантия</a>
-          </li>
-          <li class="info-navigation-item">
-            <a class="info-navigation-item-link button" href="#">Контакты</a>
-          </li>
-        </ul>
+        <div class="info-navigation">
+          <label class="info-navigation-item button" for="info-1">
+            Доставка
+          </label>
+          <label class="info-navigation-item button" for="info-2">
+            Гарантия
+          </label>
+          <label class="info-navigation-item button" for="info-3">
+            Контакты
+          </label>
+        </div>
 
         <!-- Тут будет слайдер -->
-        <div class="info-slide info-slide-current info-slide-delivery">
+        <div class="info-slide info-slide-delivery">
           <h3 class="info-section-name">Доставка</h3>
           <p class="info-details">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
