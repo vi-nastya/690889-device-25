@@ -479,15 +479,15 @@ a {
   cursor: pointer;
 }
 
-#product-1:checked ~ .promo .promo-slide-selfie,
-#product-2:checked ~ .promo .promo-slide-fitness,
-#product-3:checked ~ .promo .promo-slide-quadrocopter {
+#promo-1:checked ~ .promo .promo-slide-selfie,
+#promo-2:checked ~ .promo .promo-slide-fitness,
+#promo-3:checked ~ .promo .promo-slide-quadrocopter {
   display: flex;
 }
 
-#product-1:checked ~ .promo label[for="product-1"],
-#product-2:checked ~ .promo label[for="product-2"],
-#product-3:checked ~ .promo label[for="product-3"] {
+#promo-1:checked ~ .promo label[for="promo-1"],
+#promo-2:checked ~ .promo label[for="promo-2"],
+#promo-3:checked ~ .promo label[for="promo-3"] {
   background-image: url("../img/icons/slider-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1738,6 +1738,26 @@ input[disabled] + .checkbox-label::before {
 
 
 /* Pop-ups */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 .contact-us-popup {
   display: none;
   z-index: 100;
@@ -1783,6 +1803,12 @@ input[disabled] + .checkbox-label::before {
   border: none;
 }
 
+.contact-us-form-field:focus {
+  background-color: #ffffff;
+  border: 2px solid #f0c52e;
+  outline: none;
+}
+
 .contact-us-form-name, .contact-us-form-email {
   display: block;
   width: 360px;
@@ -1825,7 +1851,9 @@ input[disabled] + .checkbox-label::before {
 
 .popup-show {
   display: block;
+  animation: bounce 0.6s;
 }
+
 
 .popup-close {
   position: absolute;
