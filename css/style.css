@@ -1569,25 +1569,28 @@ input[disabled] + .checkbox-label::before {
   margin: 0;
 }
 
-.footer-phone a {
+.footer-phone a, .footer .logout-link {
   color: #ffffff;
 }
 
-.footer .user-navigation-link,
-.footer .actions-navigation-link {
+.footer-navigation-link-text {
   color: #ffffff;
   opacity: 0.7;
 }
 
 .footer .user-navigation-link:hover,
-.footer .user-navigation-link:focus,
 .footer .actions-navigation-link:hover,
+.footer .user-navigation-link:focus,
 .footer .actions-navigation-link:focus {
   opacity: 1;
 }
 
-.footer .user-navigation-link:active
-.footer .actions-navigation-link:active {
+.footer-navigation-link:hover .footer-navigation-link-text,
+.footer-navigation-link:focus .footer-navigation-link-text{
+  opacity: 1;
+}
+
+.footer-navigation-link:active .footer-navigation-link-text {
   opacity: 0.3;
 }
 
