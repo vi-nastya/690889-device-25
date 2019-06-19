@@ -479,9 +479,9 @@ a {
   cursor: pointer;
 }
 
-#product-1:checked ~ .promo #slide-1,
-#product-2:checked ~ .promo #slide-2,
-#product-3:checked ~ .promo #slide-3 {
+#product-1:checked ~ .promo .promo-slide-selfie,
+#product-2:checked ~ .promo .promo-slide-fitness,
+#product-3:checked ~ .promo .promo-slide-quadrocopter {
   display: flex;
 }
 
