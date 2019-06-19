@@ -158,8 +158,7 @@ a {
 
 .main-navigation-search {
   position: relative;
-  width: 520px;
-  margin-right: auto;
+  width: 540px;
   
   min-height: 49px;
   display: flex;
@@ -229,25 +228,36 @@ a {
   display: flex;
 }
 
-/* User auth */
-.profile-link {
-  margin-right: 20px;
-}
-
 .logout-link {
   opacity: 0.3;
-}
-
-.actions-navigation-link {
-  margin-left: 65px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .actions-navigation-link,
 .user-navigation-link {
   line-height: 30px;
   color: #000000;
+}
+
+.user-navigation-icon {
+  margin-right: 10px;
+}
+
+.actions-navigation-icon {
+  margin-right: 6px;
+}
+
+.actions-navigation {
+  margin-left: auto;
+}
+
+.actions-navigation-item:nth-of-type(1) {
+  margin-right: 41px;
+}
+
+
+.actions-navigation-link {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .actions-navigation-link:hover,
@@ -267,7 +277,7 @@ a {
 
 .catalog-link-container {
   position: relative;
-  width: 250px;
+  width: 260px;
   min-height: 56px;
   margin-right: auto;
 }
@@ -284,7 +294,7 @@ a {
   content: "";
   position: absolute;
   top: 4px;
-  right: 3px;
+  right: 15px;
 
   width: 16px;
   height: 16px;
@@ -302,9 +312,9 @@ a {
 
   box-sizing: border-box;
   width: 1160px;
-  min-height: 150px;
+  min-height: 153px;
   padding-left: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   display: flex;
 
   background-color: #f7e296;
@@ -555,7 +565,7 @@ a {
 }
 
 /* Categories section */
-.categories-inner {
+.categories {
   margin-bottom: 116px;
 }
 
@@ -609,6 +619,8 @@ a {
 }
 
 .category-item-name {
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 33px;
 }
 
@@ -1551,6 +1563,14 @@ input[disabled] + .checkbox-label::before {
 }
 
 
+.footer .actions-navigation {
+  margin-left: 40px;
+}
+
+.footer .user-navigation-link, .footer .actions-navigation-link {
+  vertical-align: top;
+}
+
 .footer-address,
 .footer-phone {
   padding: 0;
@@ -1595,6 +1615,7 @@ input[disabled] + .checkbox-label::before {
 
 .footer .service-navigation-link {
   color: #ffffff;
+  vertical-align: bottom;
 }
 
 .footer .service-navigation-item {
@@ -1649,9 +1670,13 @@ input[disabled] + .checkbox-label::before {
   opacity: 0.1;
 }
 
+.footer-developer {
+  padding-top: 12px;
+}
+
 .developer-link {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   width: 27px;
   height: 35px;
 
