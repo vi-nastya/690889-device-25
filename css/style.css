@@ -1790,10 +1790,19 @@ input[disabled] + .checkbox-label::before {
   border: none;
 }
 
+.contact-us-form-field:hover {
+  background-color: #eaeaea;
+}
+
 .contact-us-form-field:focus {
+  color: #464646;
   background-color: #ffffff;
   border: 2px solid #f0c52e;
   outline: none;
+}
+
+.form-field-invalid {
+  background-color: #f6dada;
 }
 
 .contact-us-form-name, .contact-us-form-email {
