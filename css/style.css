@@ -1780,6 +1780,11 @@ input[disabled] + .checkbox-label::before {
   opacity: 0.5;
 }
 
+.map-popup .popup-close {
+  top: 30px;
+  right: 37px;
+}
+
 .popup-close:hover,
 .popup-close:focus {
   opacity: 1;
