@@ -1,24 +1,24 @@
 @font-face {
   font-family: Gilroy;
-  src: url(../fonts/gilroyextrabold.woff2);
+  src: url(../fonts/gilroyextrabold.woff);
   font-weight: 800;
 }
 
 @font-face {
   font-family: Gilroy-Light;
-  src: url(../fonts/gilroylight.woff2);
+  src: url(../fonts/gilroylight.woff);
   font-weight: 300;
 }
 
 @font-face {
   font-family: OpenSans-Light;
-  src: url(../fonts/opensanslight.woff2);
+  src: url(../fonts/opensanslight.woff);
   font-weight: 300;
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url(../fonts/opensans.woff2);
+  src: url(../fonts/opensans.woff);
   font-weight: 400;
 }
 
@@ -2080,7 +2080,9 @@ input[disabled] + .checkbox-label::before {
   background-position: 0 0;
   background-color: transparent;
   border: none;
+
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .map-popup .popup-close {
