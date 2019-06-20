@@ -1381,7 +1381,7 @@ input[disabled] + .checkbox-label::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 70px;
+  height: 70px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1409,7 +1409,7 @@ input[disabled] + .checkbox-label::before {
 }
 
 .sorting-order-list {
-  width: 31px;
+  width: 38px;
   margin-left: auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1417,45 +1417,16 @@ input[disabled] + .checkbox-label::before {
 }
 
 .sorting-order-item {
-  position: relative;
-}
-
-.sorting-order-asc::before {
-  content: '';
-  position: absolute;
-  width: 11px;
-  height: 10px;
-  top: -5px;
-  right: -4px;
-  background-image: url('../img/icons/icon-up-dir.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.sorting-order-desc::before {
-  content: '';
-  position: absolute;
-  top: -5px;
-  right: -3px;
-  width: 11px;
-  height: 10px;
-
-  background-image: url('../img/icons/icon-down-dir.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.sorting-order-item::before {
   opacity: 0.3;
 }
 
-.sorting-order-item:hover::before,
-.sorting-order-item:focus::before {
+.sorting-order-item:hover,
+.sorting-order-item:focus {
   opacity: 0.6;
 }
 
-.sorting-order-item:active::before,
-.sorting-order-item-selected::before {
+.sorting-order-item:active,
+.sorting-order-item-current {
   opacity: 1;
 }
 
