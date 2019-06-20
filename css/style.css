@@ -1375,10 +1375,15 @@ input[disabled] + .checkbox-label::before {
 
 .sorting-param-list,
 .sorting-order-list {
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 70px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -1406,12 +1411,6 @@ input[disabled] + .checkbox-label::before {
 .sorting-order-list {
   width: 31px;
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
